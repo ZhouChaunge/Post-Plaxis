@@ -1,0 +1,653 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<soiltestinput id="{F2F0847A-3414-4FE3-A115-3ABE06D87BD5}" name="SoilTestInput_1">
+  <gravity>9.81</gravity>
+  <rhowater>1019.367991845056</rhowater>
+  <MaterialX id="{FB61D8A7-61F1-43E5-8F85-CA3ADB0BFD3B}" name="上海土">
+    <ConstructionParameters id="{0C40C3F9-9ADC-4B5C-934D-B56FE5244A48}" name="PlxMaterialConstructionParameters_1">
+      <materialclass>soilmat</materialclass>
+      <dllfile>
+        <IntegerValue>1</IntegerValue>
+        <TextValue>20230801unifiedmodel64.dll</TextValue>
+      </dllfile>
+      <modelindll>
+        <IntegerValue>3</IntegerValue>
+        <TextValue>Shanghai model</TextValue>
+      </modelindll>
+      <soilmodel>
+        <IntegerValue>16</IntegerValue>
+        <TextValue>User-defined</TextValue>
+      </soilmodel>
+      <cinter>1000</cinter>
+      <colour>10283244</colour>
+      <drainagetype>
+        <IntegerValue>1</IntegerValue>
+        <TextValue>Undrained A</TextValue>
+      </drainagetype>
+      <gammaunsat>18000</gammaunsat>
+      <interfacestiffnessdetermination>
+        <IntegerValue>2</IntegerValue>
+        <TextValue>From Eoed</TextValue>
+      </interfacestiffnessdetermination>
+      <eoedinter>3500000</eoedinter>
+      <gammasat>18000</gammasat>
+      <identification>上海土</identification>
+      <phiinter>30</phiinter>
+      <user1>0.90000000000000013</user1>
+      <user11>0.0002</user11>
+      <user12>5</user12>
+      <user13>0.5</user13>
+      <user2>0.3</user2>
+      <user3>1.2</user3>
+      <user4>0.2</user4>
+      <user5>0.02</user5>
+      <user6>5</user6>
+      <user7>1</user7>
+    </ConstructionParameters>
+    <colour>10283244</colour>
+    <identification>上海土</identification>
+    <UserFeatures id="{296B9D9F-BECD-4FE8-A422-440495C15183}" name="PlxUserFeatureList_1">
+      <Soil_Persistent_Internal id="{D8610F18-37D2-4978-8D41-9504AE6F9256}" name="Soil_Persistent_Internal_3">
+        <UserFeatures id="{BA7B9F56-AECB-4371-9EA6-0B878C8A9B58}" name="PlxUserFeatureList_1">
+          <Soil_Persistent_SoilIntrinsicParameters id="{8BED1497-DA06-4C12-B0E2-CEE751D65A87}" name="Soil_Persistent_SoilIntrinsicParameters_3">
+            <wn>0</wn>
+            <peakphi>0</peakphi>
+            <peakpsi>0</peakpsi>
+            <intrinsick0ncmethod>
+              <IntegerValue>1</IntegerValue>
+              <TextValue>From soil parameters</TextValue>
+            </intrinsick0ncmethod>
+            <intrinsick0ncdirect>0</intrinsick0ncdirect>
+            <intrinsiccsccmethod>
+              <IntegerValue>0</IntegerValue>
+              <TextValue>Automatic</TextValue>
+            </intrinsiccsccmethod>
+            <intrinsiccsdirect>0</intrinsiccsdirect>
+            <intrinsicccdirect>0</intrinsicccdirect>
+            <intrinsiccalphadirect>0</intrinsiccalphadirect>
+          </Soil_Persistent_SoilIntrinsicParameters>
+          <Soil_Persistent_General id="{AE46910A-FC93-47EC-906C-206A39E0C4A7}" name="Soil_Persistent_General_3">
+            <UserFeatures id="{48E48B46-D4C1-4087-AD68-BABF40749E07}" name="PlxUserFeatureList_1">
+              <Soil_Persistent_MaterialSet id="{253F90E9-12F0-411F-B186-8C27CF6B9244}" name="Soil_Persistent_MaterialSet_3">
+                <soilmodel>
+                  <IntegerValue>16</IntegerValue>
+                  <TextValue>User-defined</TextValue>
+                </soilmodel>
+                <drainagetype>
+                  <IntegerValue>1</IntegerValue>
+                  <TextValue>Undrained A</TextValue>
+                </drainagetype>
+              </Soil_Persistent_MaterialSet>
+              <Soil_Persistent_UnitWeights id="{9C286044-FFF5-4BDD-A709-6F28A990A914}" name="Soil_Persistent_UnitWeights_3">
+                <gammainputmethod>
+                  <IntegerValue>0</IntegerValue>
+                  <TextValue>Direct</TextValue>
+                </gammainputmethod>
+                <gammaunsatdirect>18000</gammaunsatdirect>
+                <gammasatdirect>18000</gammasatdirect>
+                <saturationassumeddirect>0</saturationassumeddirect>
+              </Soil_Persistent_UnitWeights>
+              <Soil_Persistent_VoidRatio id="{C256256C-372B-44FA-9F73-B66572B041DB}" name="Soil_Persistent_VoidRatio_3">
+                <einit>0.5</einit>
+              </Soil_Persistent_VoidRatio>
+              <Soil_Persistent_RayleighDamping id="{AEE36FF5-074F-4B3F-931A-57521F560D1E}" name="Soil_Persistent_RayleighDamping_3">
+                <rayleighdampinginputmethod>
+                  <IntegerValue>1</IntegerValue>
+                  <TextValue>SDOF equivalent</TextValue>
+                </rayleighdampinginputmethod>
+                <rayleighalphadirect>0</rayleighalphadirect>
+                <rayleighbetadirect>0</rayleighbetadirect>
+                <targetdamping1direct>0</targetdamping1direct>
+                <targetdamping2direct>0</targetdamping2direct>
+                <targetfrequency1>0.1</targetfrequency1>
+                <targetfrequency2>1</targetfrequency2>
+              </Soil_Persistent_RayleighDamping>
+            </UserFeatures>
+          </Soil_Persistent_General>
+          <Soil_Persistent_Mechanical id="{4C7479FE-EB6D-4729-8A0A-13F4C69B1E69}" name="Soil_Persistent_Mechanical_3">
+            <UserFeatures id="{DC53C583-E863-4201-BECB-4CBDF8BB68D9}" name="PlxUserFeatureList_1">
+              <Soil_Persistent_Stiffness id="{D14118D0-DAA8-4AFB-BF07-23FF6CA9ABDD}" name="Soil_Persistent_Stiffness_3">
+                <UserFeatures id="{DE96E232-A3FE-461B-BBF2-B06BEAA8D768}" name="PlxUserFeatureList_1">
+                  <Soil_Persistent_Alternatives id="{BB7F8FC5-7CA7-421E-91FB-26F3884953F0}" name="Soil_Persistent_Alternatives_3"/>
+                  <Soil_Persistent_StiffnessDepthDependency id="{706A9DFB-1025-429C-AC6F-B1B93C94E936}" name="Soil_Persistent_StiffnessDepthDependency_3"/>
+                  <Soil_Persistent_StressDependency id="{7BB24FB2-566C-428A-95E9-B30C3429CDDE}" name="Soil_Persistent_StressDependency_3"/>
+                  <Soil_Persistent_WaveVelocities id="{1F749BA7-F008-4E5F-B793-E687F0A1EF88}" name="Soil_Persistent_WaveVelocities_3"/>
+                  <Soil_Persistent_StrainDependencySmallStrain id="{13D8CD7F-9D3B-40B7-BD3D-5771AAB8B11B}" name="Soil_Persistent_StrainDependencySmallStrain_3"/>
+                </UserFeatures>
+              </Soil_Persistent_Stiffness>
+              <Soil_Persistent_Strength id="{030178A5-2B24-4756-8CDB-17EBDFAE79F4}" name="Soil_Persistent_Strength_3">
+                <UserFeatures id="{31138965-7DF9-45E1-8AB8-2A228E69B3E4}" name="PlxUserFeatureList_1">
+                  <Soil_Persistent_Shear id="{7C7722F1-EE71-4487-B6FE-0F22A5D31795}" name="Soil_Persistent_Shear_3">
+                    <UserFeatures id="{B0C89AF5-A348-4DDB-9486-FE003018BCC9}" name="PlxUserFeatureList_1">
+                      <Soil_Persistent_DilatancyCutoff id="{5C8AF185-4C66-4692-930E-A72058B6A7B1}" name="Soil_Persistent_DilatancyCutoff_3"/>
+                    </UserFeatures>
+                  </Soil_Persistent_Shear>
+                  <Soil_Persistent_Compression id="{F850F7B8-5C3A-4659-A9C4-A2CE393BE9EB}" name="Soil_Persistent_Compression_3"/>
+                  <Soil_Persistent_Tension id="{B60A12A6-DAE5-4FF7-9039-38F5D7B30E0B}" name="Soil_Persistent_Tension_3"/>
+                  <Soil_Persistent_UniaxialCompressiveStrengthOfIntactRock id="{CD01F604-3982-4064-9AFB-61FDCCCD9C09}" name="Soil_Persistent_UniaxialCompressiveStrengthOfIntactRock_3"/>
+                  <Soil_Persistent_HoekBrownParameters id="{9E283A58-A182-45F5-AE5C-F07D800D2235}" name="Soil_Persistent_HoekBrownParameters_3"/>
+                  <Soil_Persistent_RockMassParameters id="{35DF1D1E-11CC-4B60-A2B0-4961370FDEB2}" name="Soil_Persistent_RockMassParameters_3"/>
+                  <Soil_Persistent_ActiveUndrainedShear id="{058BC8FA-9FE6-4D84-85FD-ED2DE161B3C4}" name="Soil_Persistent_ActiveUndrainedShear_3">
+                    <UserFeatures id="{3AF4C13A-DBB1-4960-928E-2D1FA01D9A8F}" name="PlxUserFeatureList_1">
+                      <Soil_Persistent_ActiveUndrainedShearDepthDependency id="{EE0D8148-4614-411A-9CB9-0DA37CCF39B0}" name="Soil_Persistent_ActiveUndrainedShearDepthDependency_3"/>
+                    </UserFeatures>
+                  </Soil_Persistent_ActiveUndrainedShear>
+                  <Soil_Persistent_StrengthRatio id="{F114FF62-35A7-42F4-9DEF-947E682768BD}" name="Soil_Persistent_StrengthRatio_3"/>
+                  <Soil_Persistent_FailurePlasticStrains id="{AC996383-42D8-4CB1-A184-E7338F18C73C}" name="Soil_Persistent_FailurePlasticStrains_3"/>
+                  <Soil_Persistent_Dilatancy id="{2997AE01-F810-4570-9332-225587967FC5}" name="Soil_Persistent_Dilatancy_3"/>
+                  <Soil_Persistent_ShearStrengthDepthDependency id="{670E81C8-E544-4531-92EC-9E1B4F53C0AC}" name="Soil_Persistent_ShearStrengthDepthDependency_3"/>
+                </UserFeatures>
+              </Soil_Persistent_Strength>
+              <Soil_Persistent_FieldData id="{39D44562-0E56-47EF-95B9-93A3BE1D8EAB}" name="Soil_Persistent_FieldData_3"/>
+              <Soil_Persistent_Ductility id="{7F2FC8F5-49FE-4CF9-8A9F-1322E189EC9B}" name="Soil_Persistent_Ductility_3"/>
+              <Soil_Persistent_UserDefinedModel id="{24324006-8003-43C0-9001-4FB6460192B3}" name="Soil_Persistent_UserDefinedModel_3">
+                <dllfiledirect>20230801unifiedmodel64.dll</dllfiledirect>
+                <modelindlldirect>Shanghai model</modelindlldirect>
+                <UserFeatures id="{4C272140-4500-42B2-A4C6-0495A9A7A8B1}" name="PlxUserFeatureList_1">
+                  <Soil_Persistent_UserDefinedParameters id="{7754DCA1-E0BF-4931-9907-CC335B1D8351}" name="Soil_Persistent_UserDefinedParameters_3">
+                    <user1>0.90000000000000013</user1>
+                    <user2>0.3</user2>
+                    <user3>1.2</user3>
+                    <user4>0.2</user4>
+                    <user5>0.02</user5>
+                    <user6>5</user6>
+                    <user7>1</user7>
+                    <user8>0</user8>
+                    <user9>0</user9>
+                    <user10>0</user10>
+                    <user11>0.0002</user11>
+                    <user12>5</user12>
+                    <user13>0.5</user13>
+                    <user14>0</user14>
+                  </Soil_Persistent_UserDefinedParameters>
+                </UserFeatures>
+              </Soil_Persistent_UserDefinedModel>
+              <Soil_Persistent_CreepDeformation id="{16B20D82-87DC-4CC6-ACF5-F1342F493631}" name="Soil_Persistent_CreepDeformation_3"/>
+              <Soil_Persistent_Miscellaneous id="{6854588F-8A06-495C-B06D-D6216B855C80}" name="Soil_Persistent_Miscellaneous_3"/>
+              <Soil_Persistent_AdvancedMechanical id="{0FD442AF-2980-4721-A256-D5C313B215D9}" name="Soil_Persistent_AdvancedMechanical_3">
+                <UserFeatures id="{7FA65F7C-7272-4FE8-8022-D65831F7A2FD}" name="PlxUserFeatureList_1">
+                  <Soil_Persistent_AdvancedMechanicalStiffness id="{7A6A2832-8C65-483E-873C-4143E02D2D5F}" name="Soil_Persistent_AdvancedMechanicalStiffness_3"/>
+                  <Soil_Persistent_AdvancedMechanicalStrength id="{78B8B5C5-395B-42B4-B02E-0C5FE7510C0C}" name="Soil_Persistent_AdvancedMechanicalStrength_3"/>
+                </UserFeatures>
+              </Soil_Persistent_AdvancedMechanical>
+              <Soil_Persistent_TimeDependency id="{029D8086-CAA3-4138-87FE-AB05F0631F3E}" name="Soil_Persistent_TimeDependency_3">
+                <UserFeatures id="{E1F4F926-4837-4FC7-9A91-52A9531E731B}" name="PlxUserFeatureList_1">
+                  <Soil_Persistent_TimeDependencyStiffness id="{7F964D31-F614-40B5-971D-A36ABB8D47EB}" name="Soil_Persistent_TimeDependencyStiffness_3"/>
+                  <Soil_Persistent_TimeDependencyStrength id="{3577F6F2-D96A-4DC4-8033-39403E7F576A}" name="Soil_Persistent_TimeDependencyStrength_3"/>
+                  <Soil_Persistent_TimeDependencyDuctility id="{622BEE86-B4AF-410A-9BEF-CAEF3323FD7D}" name="Soil_Persistent_TimeDependencyDuctility_3"/>
+                  <Soil_Persistent_TimeDependencyShrinkage id="{825EFE7A-1667-48F2-8D50-BFB7DC39A33B}" name="Soil_Persistent_TimeDependencyShrinkage_3"/>
+                  <Soil_Persistent_TimeDependencyCreep id="{7784D6AF-0B44-46CF-A5C5-4247AE4316B1}" name="Soil_Persistent_TimeDependencyCreep_3"/>
+                </UserFeatures>
+              </Soil_Persistent_TimeDependency>
+              <Soil_Persistent_PlaneStrength id="{B5F46DDD-A4DF-4B40-8ED4-2228BC553613}" name="Soil_Persistent_PlaneStrength_3">
+                <UserFeatures id="{8B1440FC-3F49-434A-ABBF-076F5C35771D}" name="PlxUserFeatureList_1">
+                  <Soil_Persistent_Plane1 id="{B9804E28-E16E-4039-B3B9-B10AC4C5CB20}" name="Soil_Persistent_Plane1_3">
+                    <UserFeatures id="{9B44E0B8-FACB-42FD-9338-1C0B330E6E05}" name="PlxUserFeatureList_1">
+                      <Soil_Persistent_Plane1ShearStrength id="{945212DE-DED1-4720-B1EE-8C58955D0F90}" name="Soil_Persistent_Plane1ShearStrength_3"/>
+                      <Soil_Persistent_Plane1Orientation id="{53A7BF84-3A3A-444A-ABCA-05A84A00A8C1}" name="Soil_Persistent_Plane1Orientation_3"/>
+                      <Soil_Persistent_Plane1TensileStrength id="{25FF5E02-3266-4E32-9FC9-F1351CEA6271}" name="Soil_Persistent_Plane1TensileStrength_3"/>
+                    </UserFeatures>
+                  </Soil_Persistent_Plane1>
+                  <Soil_Persistent_Plane2 id="{A66607FD-B71C-4AAF-A835-BA2386170081}" name="Soil_Persistent_Plane2_3">
+                    <UserFeatures id="{B97D41D0-B4C0-49A7-843B-3889AE716D47}" name="PlxUserFeatureList_1">
+                      <Soil_Persistent_Plane2ShearStrength id="{D5D3B5B9-0F39-4C52-B111-7FC2FCC725CE}" name="Soil_Persistent_Plane2ShearStrength_3"/>
+                      <Soil_Persistent_Plane2Orientation id="{CDC93278-18BC-4E4A-BE05-4323BB533F84}" name="Soil_Persistent_Plane2Orientation_3"/>
+                      <Soil_Persistent_Plane2TensileStrength id="{7A215A18-3909-4513-96B9-E641538DEE8B}" name="Soil_Persistent_Plane2TensileStrength_3"/>
+                    </UserFeatures>
+                  </Soil_Persistent_Plane2>
+                  <Soil_Persistent_Plane3 id="{741A7C43-D5F3-4E63-B6F4-B1019A338D90}" name="Soil_Persistent_Plane3_3">
+                    <UserFeatures id="{1FBE7952-4EBD-41AA-81A6-E57A00A5F573}" name="PlxUserFeatureList_1">
+                      <Soil_Persistent_Plane3ShearStrength id="{AA1C4112-2749-4D0F-885D-F12D3A25FC2F}" name="Soil_Persistent_Plane3ShearStrength_3"/>
+                      <Soil_Persistent_Plane3Orientation id="{D556F605-7E12-4DD2-AAD9-644805FA6042}" name="Soil_Persistent_Plane3Orientation_3"/>
+                      <Soil_Persistent_Plane3TensileStrength id="{099A49AA-9420-4D21-B96C-008673DA21A9}" name="Soil_Persistent_Plane3TensileStrength_3"/>
+                    </UserFeatures>
+                  </Soil_Persistent_Plane3>
+                </UserFeatures>
+              </Soil_Persistent_PlaneStrength>
+              <Soil_Persistent_ExcessPorePressureCalculation id="{8351E8F2-62D3-48A9-A4E3-72CB1836E4D6}" name="Soil_Persistent_ExcessPorePressureCalculation_3">
+                <userundrainedbehaviourmethod>
+                  <IntegerValue>0</IntegerValue>
+                  <TextValue>nu-undrained definition</TextValue>
+                </userundrainedbehaviourmethod>
+                <userkw>500000000</userkw>
+                <usernuu>0.495</usernuu>
+                <useralphabiot>1</useralphabiot>
+              </Soil_Persistent_ExcessPorePressureCalculation>
+            </UserFeatures>
+          </Soil_Persistent_Mechanical>
+          <Soil_Persistent_Groundwater id="{A592B9A0-356F-4AD9-BF06-D5D64F9A8A5F}" name="Soil_Persistent_Groundwater_3">
+            <UserFeatures id="{7DAB95C5-AB5F-4861-AEAE-962A45FB5F43}" name="PlxUserFeatureList_1">
+              <Soil_Persistent_Model id="{CF8CBE48-E144-4E5D-A37E-51B028A9A92F}" name="Soil_Persistent_Model_3">
+                <groundwaterclassificationtype>
+                  <IntegerValue>0</IntegerValue>
+                  <TextValue>Standard</TextValue>
+                </groundwaterclassificationtype>
+                <swccfittingmethod>
+                  <IntegerValue>0</IntegerValue>
+                  <TextValue>Van Genuchten</TextValue>
+                </swccfittingmethod>
+                <subsoiltopsoil>
+                  <IntegerValue>0</IntegerValue>
+                  <TextValue>Subsoil</TextValue>
+                </subsoiltopsoil>
+                <groundwatersoilclassstandard>
+                  <IntegerValue>0</IntegerValue>
+                  <TextValue>Coarse</TextValue>
+                </groundwatersoilclassstandard>
+                <groundwatersoilclassusda>
+                  <IntegerValue>0</IntegerValue>
+                  <TextValue>Sand</TextValue>
+                </groundwatersoilclassusda>
+                <groundwatersubsoilclassstaring>
+                  <IntegerValue>0</IntegerValue>
+                  <TextValue>Non-loamy sand (O1)</TextValue>
+                </groundwatersubsoilclassstaring>
+                <groundwatertopsoilclassstaring>
+                  <IntegerValue>0</IntegerValue>
+                  <TextValue>Non-loamy sand (B1)</TextValue>
+                </groundwatertopsoilclassstaring>
+              </Soil_Persistent_Model>
+              <Soil_Persistent_ModelParameters id="{7D158E08-AF13-4073-9D56-8B5852116E3A}" name="Soil_Persistent_ModelParameters_3">
+                <saturationresidualdirect>0</saturationresidualdirect>
+                <saturationsaturateddirect>1</saturationsaturateddirect>
+                <genuchtengndirect>0</genuchtengndirect>
+                <genuchtengadirect>0</genuchtengadirect>
+                <genuchtengldirect>0</genuchtengldirect>
+                <groundwaterfractionsmethod>
+                  <IntegerValue>1</IntegerValue>
+                  <TextValue>From soil class</TextValue>
+                </groundwaterfractionsmethod>
+                <tablepsipermsat>
+                  <Row id="{4AEF2D6A-F8F8-4E29-9AF0-4ACDAE9644B7}" name="AdvancedTableRow_45">
+                    <psi>0</psi>
+                    <permeability>0</permeability>
+                    <saturation>0</saturation>
+                  </Row>
+                  <Row id="{AD7E701F-F3AE-4C92-8419-71CBF085A755}" name="AdvancedTableRow_46">
+                    <psi>0</psi>
+                    <permeability>0</permeability>
+                    <saturation>0</saturation>
+                  </Row>
+                  <Row id="{9A5A459C-9284-480C-A6EA-448672B9C002}" name="AdvancedTableRow_47">
+                    <psi>0</psi>
+                    <permeability>0</permeability>
+                    <saturation>0</saturation>
+                  </Row>
+                  <Row id="{01637933-3470-4A51-96F4-77498668D6DE}" name="AdvancedTableRow_48">
+                    <psi>0</psi>
+                    <permeability>0</permeability>
+                    <saturation>0</saturation>
+                  </Row>
+                  <Row id="{E0C8EE56-5672-496A-9241-37A846171543}" name="AdvancedTableRow_49">
+                    <psi>0</psi>
+                    <permeability>0</permeability>
+                    <saturation>0</saturation>
+                  </Row>
+                  <Row id="{818598BE-1D80-44EA-AB87-85587EB4F1D8}" name="AdvancedTableRow_50">
+                    <psi>0</psi>
+                    <permeability>0</permeability>
+                    <saturation>0</saturation>
+                  </Row>
+                  <Row id="{90AB5F14-6BEE-4A29-A63C-F5E869D4A2FE}" name="AdvancedTableRow_51">
+                    <psi>0</psi>
+                    <permeability>0</permeability>
+                    <saturation>0</saturation>
+                  </Row>
+                  <Row id="{F9AE1F40-40E1-4C20-9B07-85C87EA4B002}" name="AdvancedTableRow_52">
+                    <psi>0</psi>
+                    <permeability>0</permeability>
+                    <saturation>0</saturation>
+                  </Row>
+                  <Row id="{FD4C5FA0-F697-4107-9B87-C5EF3E876F5E}" name="AdvancedTableRow_53">
+                    <psi>0</psi>
+                    <permeability>0</permeability>
+                    <saturation>0</saturation>
+                  </Row>
+                  <Row id="{6B9DEF07-FA3C-40C3-B69E-552CCAD88D6C}" name="AdvancedTableRow_54">
+                    <psi>0</psi>
+                    <permeability>0</permeability>
+                    <saturation>0</saturation>
+                  </Row>
+                  <Row id="{8F0E7D53-866F-4BC1-9BB4-E54F5389BD7C}" name="AdvancedTableRow_55">
+                    <psi>0</psi>
+                    <permeability>0</permeability>
+                    <saturation>0</saturation>
+                  </Row>
+                  <Row id="{41649515-C5EC-4EC2-B8BA-B5658626BAFE}" name="AdvancedTableRow_56">
+                    <psi>0</psi>
+                    <permeability>0</permeability>
+                    <saturation>0</saturation>
+                  </Row>
+                  <Row id="{080A56CE-23C8-4EC4-8F69-C865F069D197}" name="AdvancedTableRow_57">
+                    <psi>0</psi>
+                    <permeability>0</permeability>
+                    <saturation>0</saturation>
+                  </Row>
+                  <Row id="{C841778E-9301-477F-9918-A8EEB6D88467}" name="AdvancedTableRow_58">
+                    <psi>0</psi>
+                    <permeability>0</permeability>
+                    <saturation>0</saturation>
+                  </Row>
+                  <Row id="{2EF5B7A6-5A23-4389-8851-8A3F3639A5E7}" name="AdvancedTableRow_59">
+                    <psi>0</psi>
+                    <permeability>0</permeability>
+                    <saturation>0</saturation>
+                  </Row>
+                  <Row id="{F88E3C19-B609-4144-90DD-B2ADEBA07339}" name="AdvancedTableRow_60">
+                    <psi>0</psi>
+                    <permeability>0</permeability>
+                    <saturation>0</saturation>
+                  </Row>
+                  <Row id="{9E63F8C7-06E0-4B1D-8B6E-119A2D8C5820}" name="AdvancedTableRow_61">
+                    <psi>0</psi>
+                    <permeability>0</permeability>
+                    <saturation>0</saturation>
+                  </Row>
+                  <Row id="{DA6AAE48-034A-46AD-8172-4A93AE7C9D7D}" name="AdvancedTableRow_62">
+                    <psi>0</psi>
+                    <permeability>0</permeability>
+                    <saturation>0</saturation>
+                  </Row>
+                  <Row id="{5FEFDF19-B8E6-4C42-9D14-79CD9B40C8FD}" name="AdvancedTableRow_63">
+                    <psi>0</psi>
+                    <permeability>0</permeability>
+                    <saturation>0</saturation>
+                  </Row>
+                  <Row id="{97ED7527-E502-45B9-B9B0-083ADB85137D}" name="AdvancedTableRow_64">
+                    <psi>0</psi>
+                    <permeability>0</permeability>
+                    <saturation>0</saturation>
+                  </Row>
+                </tablepsipermsat>
+                <groundwaterpsikdirect>-1.06</groundwaterpsikdirect>
+                <groundwaterpsisdirect>-2.37</groundwaterpsisdirect>
+              </Soil_Persistent_ModelParameters>
+              <Soil_Persistent_Soil id="{132B3FAB-88E6-4804-88EA-58BE636093B1}" name="Soil_Persistent_Soil_3">
+                <clayfraction_direct>0</clayfraction_direct>
+                <siltfraction_direct>0</siltfraction_direct>
+                <sandfraction>0</sandfraction>
+              </Soil_Persistent_Soil>
+              <Soil_Persistent_FlowParameters id="{49E107AB-A17E-4647-85C5-2BD8E7D6F75C}" name="Soil_Persistent_FlowParameters_3">
+                <UserFeatures id="{A7D90C38-6972-43BE-8F66-CD1F63903C0D}" name="PlxUserFeatureList_1">
+                  <Soil_Persistent_Permeabilities id="{701C4BA7-7B07-4009-97E7-7ACB9CEE8679}" name="Soil_Persistent_Permeabilities_3">
+                    <gwusedefaultsdirect>false</gwusedefaultsdirect>
+                    <gwdefaultsmethod>
+                      <IntegerValue>0</IntegerValue>
+                      <TextValue>From data set</TextValue>
+                    </gwdefaultsmethod>
+                    <permhorizontalprimarydirect>0</permhorizontalprimarydirect>
+                    <permhorizontalsecondarydirect>0</permhorizontalsecondarydirect>
+                    <permverticaldirect>0</permverticaldirect>
+                    <voidratiodependency>false</voidratiodependency>
+                    <ckdirect>1000000000000000</ckdirect>
+                  </Soil_Persistent_Permeabilities>
+                  <Soil_Persistent_Porosity id="{A5D539F1-4267-4AF4-A2AD-1916FD97E295}" name="Soil_Persistent_Porosity_3"/>
+                  <Soil_Persistent_UnsaturatedZone id="{FD9E6C2B-4054-4825-94B0-F4D3332BC7B6}" name="Soil_Persistent_UnsaturatedZone_3">
+                    <gwpsiunsatdirect>10000</gwpsiunsatdirect>
+                  </Soil_Persistent_UnsaturatedZone>
+                </UserFeatures>
+              </Soil_Persistent_FlowParameters>
+            </UserFeatures>
+          </Soil_Persistent_Groundwater>
+          <Soil_Persistent_Thermal id="{B27F2E5E-5908-4108-B29F-C024202C6454}" name="Soil_Persistent_Thermal_3">
+            <specificsurfacearea>0</specificsurfacearea>
+            <UserFeatures id="{2DE11DD1-ACCC-4DFD-AE5E-0CD56E649F61}" name="PlxUserFeatureList_1">
+              <Soil_Persistent_ThermalDiffusion id="{6D2E4BE6-1B2C-4702-9436-CFA048181EF5}" name="Soil_Persistent_ThermalDiffusion_3">
+                <thcs>0</thcs>
+                <thlambdas>0</thlambdas>
+                <rhos>2600</rhos>
+              </Soil_Persistent_ThermalDiffusion>
+              <Soil_Persistent_ThermalStrain id="{BDC5899A-3407-4B51-BB3C-CA0AA75A1411}" name="Soil_Persistent_ThermalStrain_3">
+                <thermalexpansiontype>
+                  <IntegerValue>1</IntegerValue>
+                  <TextValue>Isotropic</TextValue>
+                </thermalexpansiontype>
+                <thalphasx>0</thalphasx>
+                <thalphasy>0</thalphasy>
+                <thalphasz>0</thalphasz>
+              </Soil_Persistent_ThermalStrain>
+              <Soil_Persistent_FreezingThawing id="{C12BC7B3-4296-4F25-9F82-33BFCDBACBBC}" name="Soil_Persistent_FreezingThawing_3">
+                <phasechange>false</phasechange>
+                <unfrozenwatersaturationmethod>
+                  <IntegerValue>0</IntegerValue>
+                  <TextValue>None</TextValue>
+                </unfrozenwatersaturationmethod>
+                <unfrozenwatersaturationtable>
+                  <Row id="{DBC58FE0-BB02-4405-A919-E561A44C770F}" name="AdvancedTableRow_65">
+                    <temperature>0</temperature>
+                    <unfrozenwatercontent>0</unfrozenwatercontent>
+                  </Row>
+                  <Row id="{B4ECDBFF-CFB0-4371-8A22-37DAC31CEB3C}" name="AdvancedTableRow_66">
+                    <temperature>1</temperature>
+                    <unfrozenwatercontent>1</unfrozenwatercontent>
+                  </Row>
+                </unfrozenwatersaturationtable>
+              </Soil_Persistent_FreezingThawing>
+              <Soil_Persistent_VapourDiffusion id="{38355C31-8DE8-4B9C-B1A3-CBCCE7BBC9F2}" name="Soil_Persistent_VapourDiffusion_3">
+                <dv>0</dv>
+                <ftv>0</ftv>
+              </Soil_Persistent_VapourDiffusion>
+            </UserFeatures>
+          </Soil_Persistent_Thermal>
+          <Soil_Persistent_Interfaces id="{B2ADFC3C-517D-4EE8-AF8F-B1C401F054AB}" name="Soil_Persistent_Interfaces_3">
+            <UserFeatures id="{8EF7DA99-0673-4005-96CF-06AB03C6B0E9}" name="PlxUserFeatureList_1">
+              <Soil_Persistent_InterfacesStiffness id="{F0B2D648-29EC-47F6-B9B3-7CD497F45272}" name="Soil_Persistent_InterfacesStiffness_3">
+                <interfacestiffnessdetermination>
+                  <IntegerValue>2</IntegerValue>
+                  <TextValue>From Eoed</TextValue>
+                </interfacestiffnessdetermination>
+                <kninter>0</kninter>
+                <ksinter>0</ksinter>
+                <eoedinter>3500000</eoedinter>
+                <udpowerinter>0</udpowerinter>
+                <udprefinter>100000</udprefinter>
+              </Soil_Persistent_InterfacesStiffness>
+              <Soil_Persistent_InterfacesStrength id="{4D6B2051-DDE0-4B85-901B-7267156395CB}" name="Soil_Persistent_InterfacesStrength_3">
+                <cinter>1000</cinter>
+                <phiinter>30</phiinter>
+                <psiinter>0</psiinter>
+                <gapclosure>true</gapclosure>
+              </Soil_Persistent_InterfacesStrength>
+              <Soil_Persistent_InterfacesThickness id="{D3DF8229-77F8-4119-AD09-B6534F4CFD2A}" name="Soil_Persistent_InterfacesThickness_3"/>
+              <Soil_Persistent_InterfacesGroundwater id="{45939EB3-2866-432F-A299-34E8BFC7C144}" name="Soil_Persistent_InterfacesGroundwater_3">
+                <crosspermeability>
+                  <IntegerValue>0</IntegerValue>
+                  <TextValue>Impermeable</TextValue>
+                </crosspermeability>
+                <hydraulicresistance>86400</hydraulicresistance>
+                <drainageconductivity1>0</drainageconductivity1>
+                <drainageconductivity2>0</drainageconductivity2>
+              </Soil_Persistent_InterfacesGroundwater>
+              <Soil_Persistent_InterfacesThermal id="{A8E49E1D-5E95-4297-89E8-499ACEFE615D}" name="Soil_Persistent_InterfacesThermal_3">
+                <rthermal>0</rthermal>
+              </Soil_Persistent_InterfacesThermal>
+              <Soil_Persistent_InterfacesContactProperties id="{761143BE-E485-4641-AB3A-D79E08221202}" name="Soil_Persistent_InterfacesContactProperties_3">
+                <ccontact>0</ccontact>
+                <phicontact>0</phicontact>
+                <psicontact>0</psicontact>
+              </Soil_Persistent_InterfacesContactProperties>
+            </UserFeatures>
+          </Soil_Persistent_Interfaces>
+          <Soil_Persistent_InitialProperties id="{397BEC83-9012-439A-8108-0D1A1211A230}" name="Soil_Persistent_InitialProperties_3">
+            <UserFeatures id="{2A443F43-5168-4329-80FF-FFA08FEA5E1F}" name="PlxUserFeatureList_1">
+              <Soil_Persistent_K0Settings id="{79DD3233-055C-4956-927D-E6FC14AC8FE1}" name="Soil_Persistent_K0Settings_3">
+                <k0determination>
+                  <IntegerValue>0</IntegerValue>
+                  <TextValue>Automatic</TextValue>
+                </k0determination>
+                <k0primaryisk0secondary>true</k0primaryisk0secondary>
+                <k0primarydirect>0</k0primarydirect>
+                <k0secondarydirect>0</k0secondarydirect>
+              </Soil_Persistent_K0Settings>
+              <Soil_Persistent_Overconsolidation id="{956EB73B-C6F0-42DE-BCA8-30BEE748CDDE}" name="Soil_Persistent_Overconsolidation_3">
+                <ocrpopmethod>
+                  <IntegerValue>0</IntegerValue>
+                  <TextValue>POP</TextValue>
+                </ocrpopmethod>
+                <popdirect>0</popdirect>
+                <ocrdirect>1</ocrdirect>
+              </Soil_Persistent_Overconsolidation>
+            </UserFeatures>
+          </Soil_Persistent_InitialProperties>
+        </UserFeatures>
+      </Soil_Persistent_Internal>
+      <Soil_Derived_Global id="{88449057-5CB9-4AA6-879D-11C750A4A55C}" name="Soil_Derived_Global_3">
+        <UserFeatures id="{D6FC76B4-430D-4460-8991-32C8ECC30617}" name="PlxUserFeatureList_1">
+          <Soil_Derived_ProjectParameters id="{31D565D8-480D-4CF7-9A6D-1E0FA3360F30}" name="Soil_Derived_ProjectParameters_3"/>
+        </UserFeatures>
+      </Soil_Derived_Global>
+      <Soil_Derived_User id="{25D981D9-DF0B-4544-8011-557DC61BF238}" name="Soil_Derived_User_3">
+        <UserFeatures id="{FB551240-64C8-4E33-924E-90673623F0CD}" name="PlxUserFeatureList_1">
+          <Soil_Derived_SoilIntrinsicParameters id="{5B111733-DAC1-4783-8355-C93C6FBE0130}" name="Soil_Derived_SoilIntrinsicParameters_3"/>
+          <Soil_Derived_General id="{487BB1E7-D685-46AA-831B-B8DA8FF8FB36}" name="Soil_Derived_General_3">
+            <UserFeatures id="{943BB94B-7A6C-4463-9408-F31E6441A9F6}" name="PlxUserFeatureList_1">
+              <Soil_Derived_MaterialSet id="{6961EF8B-C3D3-4774-991B-52ADE1DFACD9}" name="Soil_Derived_MaterialSet_3"/>
+              <Soil_Derived_UnitWeights id="{472AD820-C539-4967-8D42-BCDA1718BF40}" name="Soil_Derived_UnitWeights_3"/>
+              <Soil_Derived_VoidRatio id="{94ACE9C1-5787-4294-BF12-52CD1E3FD9C6}" name="Soil_Derived_VoidRatio_3"/>
+              <Soil_Derived_RayleighDamping id="{818313E3-C989-47E8-BAF7-872A32620242}" name="Soil_Derived_RayleighDamping_3"/>
+            </UserFeatures>
+          </Soil_Derived_General>
+          <Soil_Derived_Mechanical id="{DCBA5E6B-D465-45DE-B8F4-C79139B899E9}" name="Soil_Derived_Mechanical_3">
+            <UserFeatures id="{B7C3E086-339E-4AE4-9938-C06D2A3547A4}" name="PlxUserFeatureList_1">
+              <Soil_Derived_Stiffness id="{ED3ED72F-74A4-435B-816F-87EAEDEE8E46}" name="Soil_Derived_Stiffness_3">
+                <UserFeatures id="{3668E138-7D95-406E-9FAB-B6C2ED621152}" name="PlxUserFeatureList_1">
+                  <Soil_Derived_Alternatives id="{0338ED90-60E5-494E-A070-D7804438DC3A}" name="Soil_Derived_Alternatives_3"/>
+                  <Soil_Derived_StiffnessDepthDependency id="{96B0AC93-5166-40CB-B81B-207E5F650C72}" name="Soil_Derived_StiffnessDepthDependency_3"/>
+                  <Soil_Derived_WaveVelocities id="{005A3832-66D8-4AD2-813E-63E1CB0AD80A}" name="Soil_Derived_WaveVelocities_3"/>
+                  <Soil_Derived_StressDependency id="{946D8C47-C57C-4ADB-9B6C-252CA37EBB3F}" name="Soil_Derived_StressDependency_3"/>
+                  <Soil_Derived_StrainDependencySmallStrain id="{1E4B7378-AB70-4149-ACC5-2A03BE2A63A9}" name="Soil_Derived_StrainDependencySmallStrain_3"/>
+                </UserFeatures>
+              </Soil_Derived_Stiffness>
+              <Soil_Derived_Strength id="{D4B83ECE-8553-49B6-B12F-A826B45709BC}" name="Soil_Derived_Strength_3">
+                <UserFeatures id="{2B53E31E-6532-4BA5-ACB3-ADD7E8515CC5}" name="PlxUserFeatureList_1">
+                  <Soil_Derived_Shear id="{7EF2E658-4B1E-4F01-9ECC-28F426A5677A}" name="Soil_Derived_Shear_3">
+                    <UserFeatures id="{2683F8A4-C01C-467E-934B-3D9FD1BE4516}" name="PlxUserFeatureList_1">
+                      <Soil_Derived_ShearStrengthDepthDependency id="{07B0AB35-AF45-46C1-8F24-D46D6AE13E7F}" name="Soil_Derived_ShearStrengthDepthDependency_3"/>
+                      <Soil_Derived_DilatancyCutoff id="{B56F672F-AEA5-4716-9038-2831445FE1CA}" name="Soil_Derived_DilatancyCutoff_3"/>
+                    </UserFeatures>
+                  </Soil_Derived_Shear>
+                  <Soil_Derived_Compression id="{3C14B69C-CDAF-47FC-B219-ED270BFC5239}" name="Soil_Derived_Compression_3"/>
+                  <Soil_Derived_Tension id="{4D1E7DE8-4D6C-4DCD-B338-EC0264FE515B}" name="Soil_Derived_Tension_3"/>
+                  <Soil_Derived_UniaxialCompressiveStrengthOfIntactRock id="{1D0E03B4-B4C6-4778-8953-FD71D4A23B21}" name="Soil_Derived_UniaxialCompressiveStrengthOfIntactRock_3"/>
+                  <Soil_Derived_HoekBrownParameters id="{63AD5797-3075-4890-A736-7E6C0C1ECD15}" name="Soil_Derived_HoekBrownParameters_3"/>
+                  <Soil_Derived_RockMassParameters id="{44389445-8D4B-4796-ABB5-6EE255C7738E}" name="Soil_Derived_RockMassParameters_3"/>
+                  <Soil_Derived_Dilatancy id="{A454793B-03F6-41A4-9D85-14E28210426A}" name="Soil_Derived_Dilatancy_3"/>
+                  <Soil_Derived_ActiveUndrainedShear id="{5717F6DD-1ADA-41D6-A247-E70D7B8442CA}" name="Soil_Derived_ActiveUndrainedShear_3">
+                    <UserFeatures id="{A12DE753-9DD7-4BA8-BF29-124516FD4E27}" name="PlxUserFeatureList_1">
+                      <Soil_Derived_ActiveUndrainedShearDepthDependency id="{B0C25B00-BAA9-4E87-840F-2BF833C29354}" name="Soil_Derived_ActiveUndrainedShearDepthDependency_3"/>
+                    </UserFeatures>
+                  </Soil_Derived_ActiveUndrainedShear>
+                  <Soil_Derived_StrengthRatio id="{86CB6C36-5AE9-4FA7-BAE3-157FDD49960F}" name="Soil_Derived_StrengthRatio_3"/>
+                  <Soil_Derived_FailurePlasticStrains id="{96C4CAA6-49F9-4033-8D72-5580311A1529}" name="Soil_Derived_FailurePlasticStrains_3"/>
+                </UserFeatures>
+              </Soil_Derived_Strength>
+              <Soil_Derived_Ductility id="{6E841BD3-A697-4D59-BC6D-4DF152BE1EF5}" name="Soil_Derived_Ductility_3"/>
+              <Soil_Derived_FieldData id="{C722E7A7-1E4C-4925-BACC-98D9A6F723AF}" name="Soil_Derived_FieldData_3"/>
+              <Soil_Derived_UserDefinedModel id="{644A2E13-3EFD-49C3-8DC8-E02140183476}" name="Soil_Derived_UserDefinedModel_3">
+                <UserFeatures id="{A2A6DA76-DB97-4A9A-BD4B-69087ABB75BD}" name="PlxUserFeatureList_1">
+                  <Soil_Derived_UserDefinedParameters id="{10BD10E4-9368-41AF-848E-439E6796684B}" name="Soil_Derived_UserDefinedParameters_3"/>
+                </UserFeatures>
+              </Soil_Derived_UserDefinedModel>
+              <Soil_Derived_CreepDeformation id="{B2F03285-66BF-438D-A424-92EFE42BFC37}" name="Soil_Derived_CreepDeformation_3"/>
+              <Soil_Derived_Miscellaneous id="{620A9D7C-8A24-4270-82BE-58B267AD9EB0}" name="Soil_Derived_Miscellaneous_3"/>
+              <Soil_Derived_AdvancedMechanical id="{3E7EA3B3-E884-411F-85A8-269DA45CE1CF}" name="Soil_Derived_AdvancedMechanical_3">
+                <UserFeatures id="{DCAEB726-751B-4CF6-B5DE-0AC8808644D3}" name="PlxUserFeatureList_1">
+                  <Soil_Derived_AdvancedMechanicalStiffness id="{C9D187C7-4ACC-47CC-9FAE-EE0DB6CC868B}" name="Soil_Derived_AdvancedMechanicalStiffness_3"/>
+                  <Soil_Derived_AdvancedMechanicalStrength id="{2FA764D1-F224-4E82-B737-58768E94FCCD}" name="Soil_Derived_AdvancedMechanicalStrength_3"/>
+                </UserFeatures>
+              </Soil_Derived_AdvancedMechanical>
+              <Soil_Derived_TimeDependency id="{DC52442D-74E9-4CF7-B521-DAB8250A4CC0}" name="Soil_Derived_TimeDependency_3">
+                <UserFeatures id="{5ED08860-9813-4547-97CF-60B96572A9E0}" name="PlxUserFeatureList_1">
+                  <Soil_Derived_TimeDependencyStiffness id="{DF230715-3539-44DD-BC42-A825DE6D8F27}" name="Soil_Derived_TimeDependencyStiffness_3"/>
+                  <Soil_Derived_TimeDependencyStrength id="{5BAA95FF-DA4F-486D-8826-2FB8F7CBF868}" name="Soil_Derived_TimeDependencyStrength_3"/>
+                  <Soil_Derived_TimeDependencyDuctility id="{8C68FF23-F8C9-4A2A-A324-B47677430691}" name="Soil_Derived_TimeDependencyDuctility_3"/>
+                  <Soil_Derived_TimeDependencyShrinkage id="{B6E06A58-E365-4691-A7A4-74FD8EBB2087}" name="Soil_Derived_TimeDependencyShrinkage_3"/>
+                  <Soil_Derived_TimeDependencyCreep id="{E9A6C7E2-8C26-4DCD-AA30-989AFC55C727}" name="Soil_Derived_TimeDependencyCreep_3"/>
+                </UserFeatures>
+              </Soil_Derived_TimeDependency>
+              <Soil_Derived_PlaneStrength id="{BED2E72D-7304-47F4-98B6-95BCD8123391}" name="Soil_Derived_PlaneStrength_3">
+                <UserFeatures id="{01641447-AAA6-4F33-AE39-086C97DB8804}" name="PlxUserFeatureList_1">
+                  <Soil_Derived_Plane1 id="{03D49122-836F-4FFC-B2FD-56332FA55515}" name="Soil_Derived_Plane1_3">
+                    <UserFeatures id="{07B3E07B-5EBF-4340-B203-A71052E96308}" name="PlxUserFeatureList_1">
+                      <Soil_Derived_Plane1ShearStrength id="{95250310-656C-4EB7-8BA1-A272ECD9148E}" name="Soil_Derived_Plane1ShearStrength_3"/>
+                      <Soil_Derived_Plane1Orientation id="{A76D3475-C5E8-4D85-8BE5-D73C50A1EAC5}" name="Soil_Derived_Plane1Orientation_3"/>
+                      <Soil_Derived_Plane1TensileStrength id="{295FDA8A-DD70-42D1-ADAC-EA8F56273253}" name="Soil_Derived_Plane1TensileStrength_3"/>
+                    </UserFeatures>
+                  </Soil_Derived_Plane1>
+                  <Soil_Derived_Plane2 id="{4D8B43A6-3B05-4275-B60D-9075E8452871}" name="Soil_Derived_Plane2_3">
+                    <UserFeatures id="{14DA05A0-7562-4F95-8FB8-53B67B14BD3A}" name="PlxUserFeatureList_1">
+                      <Soil_Derived_Plane2ShearStrength id="{8CA69BEB-60D5-430D-AB85-C6E9AA7638EE}" name="Soil_Derived_Plane2ShearStrength_3"/>
+                      <Soil_Derived_Plane2Orientation id="{E95B2AB0-B188-43B8-8403-5B1DAB3344A3}" name="Soil_Derived_Plane2Orientation_3"/>
+                      <Soil_Derived_Plane2TensileStrength id="{D4259E6C-71AD-401D-9ABC-D3E5ED1BDC1A}" name="Soil_Derived_Plane2TensileStrength_3"/>
+                    </UserFeatures>
+                  </Soil_Derived_Plane2>
+                  <Soil_Derived_Plane3 id="{59ED49B4-D55B-4385-8442-1237ED08F616}" name="Soil_Derived_Plane3_3">
+                    <UserFeatures id="{EF42349A-5AE8-48CB-99CF-CE0D377A5615}" name="PlxUserFeatureList_1">
+                      <Soil_Derived_Plane3ShearStrength id="{72A55D71-4B4D-451C-880E-30CDA93B6F85}" name="Soil_Derived_Plane3ShearStrength_3"/>
+                      <Soil_Derived_Plane3Orientation id="{49B07E05-762C-480D-AF1C-2E7CD2D57B54}" name="Soil_Derived_Plane3Orientation_3"/>
+                      <Soil_Derived_Plane3TensileStrength id="{04ECA808-5BF5-4FA8-A767-8BA3ADAF9D8C}" name="Soil_Derived_Plane3TensileStrength_3"/>
+                    </UserFeatures>
+                  </Soil_Derived_Plane3>
+                </UserFeatures>
+              </Soil_Derived_PlaneStrength>
+              <Soil_Derived_ExcessPorePressureCalculation id="{EA260660-9118-47CD-91D6-9F5E48E3A720}" name="Soil_Derived_ExcessPorePressureCalculation_3"/>
+            </UserFeatures>
+          </Soil_Derived_Mechanical>
+          <Soil_Derived_Groundwater id="{BD9C8C06-F2B8-4AA1-A246-CE9D98F04062}" name="Soil_Derived_Groundwater_3">
+            <UserFeatures id="{8990F15F-5E8F-47BE-8E71-1AD09FDCDB58}" name="PlxUserFeatureList_1">
+              <Soil_Derived_Model id="{B1C0E9A4-E808-4DBD-A672-FC9363984596}" name="Soil_Derived_Model_3"/>
+              <Soil_Derived_ModelParameters id="{54F0045B-DD4E-40AA-9AC3-970589F3972A}" name="Soil_Derived_ModelParameters_3"/>
+              <Soil_Derived_Soil id="{4771BA04-E5DB-4DE8-9C44-8FBECCD2F898}" name="Soil_Derived_Soil_3"/>
+              <Soil_Derived_FlowParameters id="{BF87FAFE-BF3B-4A6D-B4AF-A5E585EEB6C1}" name="Soil_Derived_FlowParameters_3">
+                <UserFeatures id="{7E7E6629-04E4-4C86-916A-2ECB3E7D5D4F}" name="PlxUserFeatureList_1">
+                  <Soil_Derived_Permeabilities id="{7A9381CD-FF1D-4688-BCFE-AD0EBCCA02ED}" name="Soil_Derived_Permeabilities_3"/>
+                  <Soil_Derived_Porosity id="{5C59E73E-5DCE-479A-83F0-925D7C8D00F2}" name="Soil_Derived_Porosity_3"/>
+                  <Soil_Derived_UnsaturatedZone id="{F7B95D64-D16C-4020-AC87-A530EE07851E}" name="Soil_Derived_UnsaturatedZone_3"/>
+                </UserFeatures>
+              </Soil_Derived_FlowParameters>
+            </UserFeatures>
+          </Soil_Derived_Groundwater>
+          <Soil_Derived_Thermal id="{9BEA89A9-ED7B-42DB-B4A7-487CD14946AF}" name="Soil_Derived_Thermal_3">
+            <UserFeatures id="{827179B1-DB55-4846-86A2-3DAD33869448}" name="PlxUserFeatureList_1">
+              <Soil_Derived_ThermalDiffusion id="{67DF8E34-D386-40A6-8431-D2920DC7D729}" name="Soil_Derived_ThermalDiffusion_3"/>
+              <Soil_Derived_ThermalStrain id="{012855FF-53CD-4FD3-8616-067C5806570B}" name="Soil_Derived_ThermalStrain_3"/>
+              <Soil_Derived_FreezingThawing id="{44CD9096-67C9-4DD0-B27D-87149869E276}" name="Soil_Derived_FreezingThawing_3"/>
+              <Soil_Derived_VapourDiffusion id="{75E4B21E-F0FD-4172-BCC8-DFCE1B03520C}" name="Soil_Derived_VapourDiffusion_3"/>
+            </UserFeatures>
+          </Soil_Derived_Thermal>
+          <Soil_Derived_Interfaces id="{F778A0DE-86F3-4B52-A264-DD83C48F5DCF}" name="Soil_Derived_Interfaces_3">
+            <UserFeatures id="{D4D91508-50CC-49E5-87FA-1BADE63DF47E}" name="PlxUserFeatureList_1">
+              <Soil_Derived_InterfacesStiffness id="{603A360D-4C63-4479-B8DD-506701EEC76A}" name="Soil_Derived_InterfacesStiffness_3"/>
+              <Soil_Derived_InterfacesStrength id="{0DBF34B1-C701-47CD-BB3B-91A574F85044}" name="Soil_Derived_InterfacesStrength_3"/>
+              <Soil_Derived_InterfacesThickness id="{73031388-FE13-4D2C-ABE4-FC102A054B02}" name="Soil_Derived_InterfacesThickness_3"/>
+              <Soil_Derived_InterfacesGroundwater id="{75CCC8C5-9297-4799-98B6-AB1FB1F945D2}" name="Soil_Derived_InterfacesGroundwater_3"/>
+              <Soil_Derived_InterfacesThermal id="{430E61BA-9AB6-4DEB-90E4-768092A4F78F}" name="Soil_Derived_InterfacesThermal_3"/>
+              <Soil_Derived_InterfacesContactProperties id="{49DC8623-3ADA-4D92-A187-EC8496E80BCD}" name="Soil_Derived_InterfacesContactProperties_3"/>
+            </UserFeatures>
+          </Soil_Derived_Interfaces>
+          <Soil_Derived_InitialProperties id="{8C604C83-4A4D-4A28-9081-7D3C79892AA7}" name="Soil_Derived_InitialProperties_3">
+            <UserFeatures id="{4BD89F01-55B2-4B01-8E35-E6796D176E03}" name="PlxUserFeatureList_1">
+              <Soil_Derived_K0Settings id="{9E2E1130-7952-4F3B-A655-BE9F4DF6E5DE}" name="Soil_Derived_K0Settings_3"/>
+              <Soil_Derived_Overconsolidation id="{FC4451CA-0F2E-4C6E-A280-4C4118B8C46C}" name="Soil_Derived_Overconsolidation_3"/>
+            </UserFeatures>
+          </Soil_Derived_InitialProperties>
+        </UserFeatures>
+      </Soil_Derived_User>
+    </UserFeatures>
+    <RootAPG>SoilMX_RootAPG_UserDefined</RootAPG>
+  </MaterialX>
+  <SystemOfUnits>
+    <Force>kN</Force>
+    <Time>day</Time>
+    <Length>m</Length>
+    <Mass>t</Mass>
+    <Temperature>K</Temperature>
+    <TemperatureInterval>K</TemperatureInterval>
+    <Power>kW</Power>
+    <Energy>kJ</Energy>
+    <Angle>°</Angle>
+    <AngleRad>rad</AngleRad>
+    <AccelerationG>g</AccelerationG>
+    <Percentage>%</Percentage>
+    <FrequencyHertz>Hz</FrequencyHertz>
+  </SystemOfUnits>
+</soiltestinput>

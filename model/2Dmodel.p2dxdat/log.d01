@@ -1,0 +1,97 @@
+[General]
+Version=0
+CalcMode=Classic
+CalcType=
+ErrorCode=0
+ErrorMsg=OK
+StepsCount=22
+ErrorParams=
+DateTime=08-05-2024 19:03
+[Step001]
+DateTime=08-05-2024 19:03
+LeadNumber=-1
+LeadFinished=False
+[Step002]
+DateTime=08-05-2024 19:03
+LeadNumber=-1
+LeadFinished=False
+[Step003]
+DateTime=08-05-2024 19:03
+LeadNumber=-1
+LeadFinished=False
+[Step004]
+DateTime=08-05-2024 19:03
+LeadNumber=-1
+LeadFinished=False
+[Step005]
+DateTime=08-05-2024 19:03
+LeadNumber=-1
+LeadFinished=False
+[Step006]
+DateTime=08-05-2024 19:03
+LeadNumber=-1
+LeadFinished=False
+[Step007]
+DateTime=08-05-2024 19:03
+LeadNumber=-1
+LeadFinished=False
+[Step008]
+DateTime=08-05-2024 19:03
+LeadNumber=-1
+LeadFinished=False
+[Step009]
+DateTime=08-05-2024 19:03
+LeadNumber=-1
+LeadFinished=False
+[Step010]
+DateTime=08-05-2024 19:03
+LeadNumber=-1
+LeadFinished=False
+[Step011]
+DateTime=08-05-2024 19:03
+LeadNumber=-1
+LeadFinished=False
+[Step012]
+DateTime=08-05-2024 19:03
+LeadNumber=-1
+LeadFinished=False
+[Step013]
+DateTime=08-05-2024 19:03
+LeadNumber=-1
+LeadFinished=False
+[Step014]
+DateTime=08-05-2024 19:03
+LeadNumber=-1
+LeadFinished=False
+[Step015]
+DateTime=08-05-2024 19:03
+LeadNumber=-1
+LeadFinished=False
+[Step016]
+DateTime=08-05-2024 19:03
+LeadNumber=-1
+LeadFinished=False
+[Step017]
+DateTime=08-05-2024 19:03
+LeadNumber=-1
+LeadFinished=False
+[Step018]
+DateTime=08-05-2024 19:03
+LeadNumber=-1
+LeadFinished=False
+[Step019]
+DateTime=08-05-2024 19:03
+LeadNumber=-1
+LeadFinished=False
+[Step020]
+DateTime=08-05-2024 19:03
+LeadNumber=-1
+LeadFinished=False
+[Step021]
+DateTime=08-05-2024 19:03
+LeadNumber=-1
+LeadFinished=False
+[Step022]
+DateTime=08-05-2024 19:03
+LeadNumber=-1
+LeadFinished=False

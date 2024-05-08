@@ -1,0 +1,916 @@
+{
+ "uid": "{F304658F-3609-46D4-B754-613FCF0B2F83}",
+ "ref": "0",
+ "description": "Model",
+ "objects": [
+  {
+   "uid": "{F333ED8B-51F9-41DD-ACB3-88F4868CCAF0}",
+   "description": "Geometry",
+   "objects": [
+    {
+     "uid": "{4A770A87-2E0B-40DA-87FB-8D813C125B9B}",
+     "description": "Points",
+     "objects": [
+      {
+       "uid": "{824E960A-81E0-4953-96AF-CE35708B7170}",
+       "description": "Point_1",
+       "objects": [
+        {
+         "uid": "{2AFAA2D6-0BBE-409A-B5E9-74F891691328}",
+         "description": "Point_1_1",
+         "objects": [],
+         "caption": "Point_1_1"
+        }],
+       "caption": "Point_1"
+      },{
+       "uid": "{A4338C3D-53DC-4EE0-B95C-9FB19A83106C}",
+       "description": "Point_2",
+       "objects": [
+        {
+         "uid": "{3AAFF3D2-F1D2-4A1D-A069-DE67A336475F}",
+         "description": "Point_2_1",
+         "objects": [],
+         "caption": "Point_2_1"
+        }],
+       "caption": "Point_2"
+      },{
+       "uid": "{1C5EA591-EE06-426D-AEE3-37B3E06BAF19}",
+       "description": "Point_3",
+       "objects": [
+        {
+         "uid": "{6F9B4346-48F7-4881-8B70-175F293ADEE0}",
+         "description": "Point_3_1",
+         "objects": [],
+         "caption": "Point_3_1"
+        }],
+       "caption": "Point_3"
+      },{
+       "uid": "{118986B0-8748-405B-8A4F-62AAA9D1FCB7}",
+       "description": "Point_4",
+       "objects": [
+        {
+         "uid": "{B9B588EA-981C-4289-82AE-317101CBCC85}",
+         "description": "Point_4_1",
+         "objects": [],
+         "caption": "Point_4_1"
+        }],
+       "caption": "Point_4"
+      },{
+       "uid": "{5E718E20-EAB8-4285-A712-F1EFE481CCB4}",
+       "description": "Point_5",
+       "objects": [
+        {
+         "uid": "{F26B2A31-5BDF-4A5F-B796-C06EF7E12FFA}",
+         "description": "Point_5_1",
+         "objects": [],
+         "caption": "Point_5_1"
+        }],
+       "caption": "Point_5"
+      },{
+       "uid": "{356609CF-2472-4906-A1A3-340DBFC88904}",
+       "description": "Point_6",
+       "objects": [
+        {
+         "uid": "{B30DF4BB-185E-4AE6-8CAC-A6DA9D9D8394}",
+         "description": "Point_6_1",
+         "objects": [],
+         "caption": "Point_6_1"
+        }],
+       "caption": "Point_6"
+      },{
+       "uid": "{F24EC192-456D-464F-BF8B-327241303BEB}",
+       "description": "Point_7",
+       "objects": [
+        {
+         "uid": "{06674F93-C297-40F2-877B-85BC01344254}",
+         "description": "Point_7_1",
+         "objects": [],
+         "caption": "Point_7_1"
+        }],
+       "caption": "Point_7"
+      },{
+       "uid": "{41FCD022-6B40-4BCB-94A9-4167B6C3A37B}",
+       "description": "Point_8",
+       "objects": [
+        {
+         "uid": "{E3A1A676-9D77-43EB-AB94-DA70F0C5C741}",
+         "description": "Point_8_1",
+         "objects": [],
+         "caption": "Point_8_1"
+        }],
+       "caption": "Point_8"
+      },{
+       "uid": "{FFA319CA-096E-40CA-92C4-F3E05B6A59D3}",
+       "description": "Point_9",
+       "objects": [
+        {
+         "uid": "{D39E019B-91A7-4049-9E0F-BDA912B77443}",
+         "description": "Point_9_1",
+         "objects": [
+          {
+           "uid": "{3B73C550-BFD0-4875-858B-7C30F312D4A9}",
+           "ref": "1",
+           "description": "FixedEndAnchor_1_1",
+           "objects": [],
+           "type": "FixedEndAnchor",
+           "caption": "FixedEndAnchor_1_1"
+          }],
+         "caption": "Point_9_1"
+        }],
+       "caption": "Point_9"
+      },{
+       "uid": "{7C9318FB-F671-42E6-9DCC-45F875AC4F53}",
+       "description": "Point_10",
+       "objects": [
+        {
+         "uid": "{86169E85-C114-4367-A453-741EEF834E45}",
+         "description": "Point_10_1",
+         "objects": [],
+         "caption": "Point_10_1"
+        }],
+       "caption": "Point_10"
+      },{
+       "uid": "{D001511D-7070-441B-B2C0-38B8D222B628}",
+       "description": "Point_11",
+       "objects": [
+        {
+         "uid": "{84B1A8CC-586D-4CD6-8F2B-37D539C25DA1}",
+         "description": "Point_11_1",
+         "objects": [],
+         "caption": "Point_11_1"
+        }],
+       "caption": "Point_11"
+      },{
+       "uid": "{639CFC5A-130A-4267-B825-5979E6AE5332}",
+       "description": "Point_12",
+       "objects": [
+        {
+         "uid": "{1BDF9F65-AC3B-4B55-AB23-0BA371A08B5E}",
+         "description": "Point_12_1",
+         "objects": [
+          {
+           "uid": "{F78CE661-47DC-4236-843B-53348CB2107B}",
+           "ref": "2",
+           "description": "FixedEndAnchor_2_1",
+           "objects": [],
+           "type": "FixedEndAnchor",
+           "caption": "FixedEndAnchor_2_1"
+          }],
+         "caption": "Point_12_1"
+        }],
+       "caption": "Point_12"
+      },{
+       "uid": "{973B9D26-FF20-4E83-BF2B-238C8BF37D6F}",
+       "description": "Point_13",
+       "objects": [
+        {
+         "uid": "{C18B99EB-FF21-4B4E-8818-7D8D5F461AF0}",
+         "description": "Point_13_1",
+         "objects": [
+          {
+           "uid": "{F1549472-7498-4B0F-8612-8F6C52073E11}",
+           "ref": "3",
+           "description": "FixedEndAnchor_3_1",
+           "objects": [],
+           "type": "FixedEndAnchor",
+           "caption": "FixedEndAnchor_3_1"
+          }],
+         "caption": "Point_13_1"
+        }],
+       "caption": "Point_13"
+      },{
+       "uid": "{D6E4CE94-D3DD-47B3-8FFB-821D933EACDA}",
+       "description": "Point_14",
+       "objects": [
+        {
+         "uid": "{DA8BEC18-1CAD-4C51-AE67-CC7A2DA316F5}",
+         "description": "Point_14_1",
+         "objects": [
+          {
+           "uid": "{2E8A4472-59CF-4915-A6B5-BA97217F0929}",
+           "ref": "4",
+           "description": "FixedEndAnchor_4_1",
+           "objects": [],
+           "type": "FixedEndAnchor",
+           "caption": "FixedEndAnchor_4_1"
+          }],
+         "caption": "Point_14_1"
+        }],
+       "caption": "Point_14"
+      }],
+     "caption": "\u70b9"
+    },{
+     "uid": "{5DB01D1C-CFEE-403B-98FA-95EF11ED19ED}",
+     "description": "Lines",
+     "objects": [
+      {
+       "uid": "{B64FE0F3-5A88-49A1-A7B3-24AF58BC9903}",
+       "description": "Line_1",
+       "objects": [
+        {
+         "uid": "{7A2935C5-EA73-4291-A97D-38BB518196E3}",
+         "description": "Line_1_1",
+         "objects": [
+          {
+           "uid": "{BC51F9BB-81DD-4335-AC76-81EB97EADA78}",
+           "ref": "3",
+           "description": "GWFlowBaseBC_3",
+           "objects": [],
+           "type": "GWFlowBaseBC",
+           "caption": "GWFlowBaseBC_3"
+          },{
+           "uid": "{61B2328E-2A7B-4411-B34B-31DAADE424A0}",
+           "ref": "1",
+           "description": "Plate_1_1",
+           "objects": [],
+           "type": "Plate",
+           "caption": "Plate_1_1"
+          },{
+           "uid": "{85B9AC07-EA79-40C1-BAA2-E534B8D6B74A}",
+           "ref": "1",
+           "description": "PositiveInterface_1_1",
+           "objects": [],
+           "type": "PositiveInterface",
+           "caption": "PositiveInterface_1_1"
+          },{
+           "uid": "{7F97E477-B908-429D-8CAB-AC1DA83A29B0}",
+           "ref": "2",
+           "description": "NegativeInterface_1_1",
+           "objects": [],
+           "type": "NegativeInterface",
+           "caption": "NegativeInterface_1_1"
+          }],
+         "caption": "Line_1_1"
+        },{
+         "uid": "{ED100391-2EE3-48AC-9219-59951391BC5C}",
+         "description": "Line_1_2",
+         "objects": [
+          {
+           "uid": "{334AA495-F8D1-462C-98AB-3ECD465807BB}",
+           "ref": "5",
+           "description": "GWFlowBaseBC_5",
+           "objects": [],
+           "type": "GWFlowBaseBC",
+           "caption": "GWFlowBaseBC_5"
+          },{
+           "uid": "{69E079BC-A917-49BB-ACD8-237D1AA4AB5E}",
+           "ref": "2",
+           "description": "Plate_1_2",
+           "objects": [],
+           "type": "Plate",
+           "caption": "Plate_1_2"
+          },{
+           "uid": "{594849DE-3C1C-43C4-BED5-1B68256488FB}",
+           "ref": "3",
+           "description": "PositiveInterface_1_2",
+           "objects": [],
+           "type": "PositiveInterface",
+           "caption": "PositiveInterface_1_2"
+          },{
+           "uid": "{1966D61B-82D0-4400-B411-62BC9D0BAA64}",
+           "ref": "4",
+           "description": "NegativeInterface_1_2",
+           "objects": [],
+           "type": "NegativeInterface",
+           "caption": "NegativeInterface_1_2"
+          }],
+         "caption": "Line_1_2"
+        },{
+         "uid": "{53A4D627-48FC-4F2D-AC88-5E872055A165}",
+         "description": "Line_1_3",
+         "objects": [
+          {
+           "uid": "{4A7CA548-66DB-40C5-B7FD-7BE59A54650C}",
+           "ref": "7",
+           "description": "GWFlowBaseBC_7",
+           "objects": [],
+           "type": "GWFlowBaseBC",
+           "caption": "GWFlowBaseBC_7"
+          },{
+           "uid": "{40B65042-A514-488F-9D6B-7C383607C3EF}",
+           "ref": "3",
+           "description": "Plate_1_3",
+           "objects": [],
+           "type": "Plate",
+           "caption": "Plate_1_3"
+          },{
+           "uid": "{0EF6A07B-8E4A-43CE-B8E6-62F60EAB1D02}",
+           "ref": "5",
+           "description": "PositiveInterface_1_3",
+           "objects": [],
+           "type": "PositiveInterface",
+           "caption": "PositiveInterface_1_3"
+          },{
+           "uid": "{75392DB9-0682-4414-9ECF-D9183ED27F7D}",
+           "ref": "6",
+           "description": "NegativeInterface_1_3",
+           "objects": [],
+           "type": "NegativeInterface",
+           "caption": "NegativeInterface_1_3"
+          }],
+         "caption": "Line_1_3"
+        },{
+         "uid": "{05D211C5-AEE6-4C46-92C5-590D5AFF842F}",
+         "description": "Line_1_4",
+         "objects": [
+          {
+           "uid": "{0212A305-0786-4D91-8DD5-87ACB0CAA744}",
+           "ref": "9",
+           "description": "GWFlowBaseBC_9",
+           "objects": [],
+           "type": "GWFlowBaseBC",
+           "caption": "GWFlowBaseBC_9"
+          },{
+           "uid": "{41D84221-9799-4860-B10C-2D7BDF178CD5}",
+           "ref": "4",
+           "description": "Plate_1_4",
+           "objects": [],
+           "type": "Plate",
+           "caption": "Plate_1_4"
+          },{
+           "uid": "{4B66548D-FFDA-46AE-89E9-0D3FFB1BDA1B}",
+           "ref": "7",
+           "description": "PositiveInterface_1_4",
+           "objects": [],
+           "type": "PositiveInterface",
+           "caption": "PositiveInterface_1_4"
+          },{
+           "uid": "{C1969E7F-C093-4046-84D5-748DD751D575}",
+           "ref": "8",
+           "description": "NegativeInterface_1_4",
+           "objects": [],
+           "type": "NegativeInterface",
+           "caption": "NegativeInterface_1_4"
+          }],
+         "caption": "Line_1_4"
+        },{
+         "uid": "{23BC0AAD-B05E-4AC1-8415-156F3F7E1430}",
+         "description": "Line_1_5",
+         "objects": [
+          {
+           "uid": "{E9AFDA3B-27E2-4E40-83CA-32720D219A18}",
+           "ref": "11",
+           "description": "GWFlowBaseBC_11",
+           "objects": [],
+           "type": "GWFlowBaseBC",
+           "caption": "GWFlowBaseBC_11"
+          },{
+           "uid": "{8C729789-71A7-4504-A1A1-AD6779ECBBCD}",
+           "ref": "5",
+           "description": "Plate_1_5",
+           "objects": [],
+           "type": "Plate",
+           "caption": "Plate_1_5"
+          },{
+           "uid": "{C49395F1-B901-415B-A247-87A51B64A66A}",
+           "ref": "9",
+           "description": "PositiveInterface_1_5",
+           "objects": [],
+           "type": "PositiveInterface",
+           "caption": "PositiveInterface_1_5"
+          },{
+           "uid": "{FC4084A3-5CAA-4E3D-AF4D-BCB65DC0E8C8}",
+           "ref": "10",
+           "description": "NegativeInterface_1_5",
+           "objects": [],
+           "type": "NegativeInterface",
+           "caption": "NegativeInterface_1_5"
+          }],
+         "caption": "Line_1_5"
+        },{
+         "uid": "{1EF13D2D-FAE1-4845-AFB6-529577044D6F}",
+         "description": "Line_1_6",
+         "objects": [
+          {
+           "uid": "{C1E11351-564E-4482-9AA9-777707C4B863}",
+           "ref": "14",
+           "description": "GWFlowBaseBC_14",
+           "objects": [],
+           "type": "GWFlowBaseBC",
+           "caption": "GWFlowBaseBC_14"
+          },{
+           "uid": "{0F881017-FC48-41A6-9470-54C99BC2E63E}",
+           "ref": "6",
+           "description": "Plate_1_6",
+           "objects": [],
+           "type": "Plate",
+           "caption": "Plate_1_6"
+          },{
+           "uid": "{D5FBBEC2-2422-46F7-B906-D504764694B5}",
+           "ref": "11",
+           "description": "PositiveInterface_1_6",
+           "objects": [],
+           "type": "PositiveInterface",
+           "caption": "PositiveInterface_1_6"
+          },{
+           "uid": "{3B53A5D7-7184-4700-BE17-E80A136070CC}",
+           "ref": "12",
+           "description": "NegativeInterface_1_6",
+           "objects": [],
+           "type": "NegativeInterface",
+           "caption": "NegativeInterface_1_6"
+          }],
+         "caption": "Line_1_6"
+        },{
+         "uid": "{8D98504A-76FC-4BDC-B7B2-E4218AFDE0DD}",
+         "description": "Line_1_7",
+         "objects": [
+          {
+           "uid": "{705611AE-5254-4039-BCA2-6846583439B4}",
+           "ref": "16",
+           "description": "GWFlowBaseBC_16",
+           "objects": [],
+           "type": "GWFlowBaseBC",
+           "caption": "GWFlowBaseBC_16"
+          },{
+           "uid": "{FC7F76DA-D5D7-49A1-8DC5-3E7EB466E524}",
+           "ref": "7",
+           "description": "Plate_1_7",
+           "objects": [],
+           "type": "Plate",
+           "caption": "Plate_1_7"
+          },{
+           "uid": "{97C26ACD-53D3-40EA-A791-3E8F1A82DF9E}",
+           "ref": "13",
+           "description": "PositiveInterface_1_7",
+           "objects": [],
+           "type": "PositiveInterface",
+           "caption": "PositiveInterface_1_7"
+          },{
+           "uid": "{F9051CD9-4A84-4488-9EDA-C0AB154F2CFC}",
+           "ref": "14",
+           "description": "NegativeInterface_1_7",
+           "objects": [],
+           "type": "NegativeInterface",
+           "caption": "NegativeInterface_1_7"
+          }],
+         "caption": "Line_1_7"
+        },{
+         "uid": "{B865D4A2-A53D-4AEF-884B-FF662E94DC28}",
+         "description": "Line_1_8",
+         "objects": [
+          {
+           "uid": "{94322740-3143-49C3-BD61-1D4F6F067518}",
+           "ref": "18",
+           "description": "GWFlowBaseBC_18",
+           "objects": [],
+           "type": "GWFlowBaseBC",
+           "caption": "GWFlowBaseBC_18"
+          },{
+           "uid": "{2FE1BF06-CE49-4D91-90B9-0A5EB0EE7BBC}",
+           "ref": "8",
+           "description": "Plate_1_8",
+           "objects": [],
+           "type": "Plate",
+           "caption": "Plate_1_8"
+          },{
+           "uid": "{63AC4EDB-A212-4934-885A-B124B900A2BA}",
+           "ref": "15",
+           "description": "PositiveInterface_1_8",
+           "objects": [],
+           "type": "PositiveInterface",
+           "caption": "PositiveInterface_1_8"
+          },{
+           "uid": "{AF6ED539-93EA-42A6-81F4-E58FD490C974}",
+           "ref": "16",
+           "description": "NegativeInterface_1_8",
+           "objects": [],
+           "type": "NegativeInterface",
+           "caption": "NegativeInterface_1_8"
+          }],
+         "caption": "Line_1_8"
+        },{
+         "uid": "{BCB611B0-63AF-443E-80B3-6FD3DF0E7953}",
+         "description": "Line_1_9",
+         "objects": [
+          {
+           "uid": "{6CC6D93D-705F-40D7-9337-F3C4F29E3F1F}",
+           "ref": "21",
+           "description": "GWFlowBaseBC_21",
+           "objects": [],
+           "type": "GWFlowBaseBC",
+           "caption": "GWFlowBaseBC_21"
+          },{
+           "uid": "{40DEE8B4-7133-4D96-9A44-D3235C1480FE}",
+           "ref": "9",
+           "description": "Plate_1_9",
+           "objects": [],
+           "type": "Plate",
+           "caption": "Plate_1_9"
+          },{
+           "uid": "{2858B49D-B0BD-4878-8E51-CD1B07195221}",
+           "ref": "17",
+           "description": "PositiveInterface_1_9",
+           "objects": [],
+           "type": "PositiveInterface",
+           "caption": "PositiveInterface_1_9"
+          },{
+           "uid": "{B942661C-2BA2-4A90-A522-F1499102B7F6}",
+           "ref": "18",
+           "description": "NegativeInterface_1_9",
+           "objects": [],
+           "type": "NegativeInterface",
+           "caption": "NegativeInterface_1_9"
+          }],
+         "caption": "Line_1_9"
+        }],
+       "caption": "Line_1"
+      },{
+       "uid": "{4F5A2ACB-B359-41D6-A2F1-49991F497742}",
+       "description": "Line_2",
+       "objects": [
+        {
+         "uid": "{A28DDA39-1A9B-4984-AC67-E81F325ABFB8}",
+         "description": "Line_2_1",
+         "objects": [
+          {
+           "uid": "{030D09FA-52DF-4217-8659-CF2921D85DE3}",
+           "ref": "6",
+           "description": "GWFlowBaseBC_6",
+           "objects": [],
+           "type": "GWFlowBaseBC",
+           "caption": "GWFlowBaseBC_6"
+          }],
+         "caption": "Line_2_1"
+        }],
+       "caption": "Line_2"
+      },{
+       "uid": "{153E6E97-F995-4106-93E4-CB6EF98FEF80}",
+       "description": "Line_3",
+       "objects": [
+        {
+         "uid": "{E975F8CE-8708-43BC-9873-B7FCF617240F}",
+         "description": "Line_3_1",
+         "objects": [
+          {
+           "uid": "{17FCC043-ED86-495F-AC74-35CB8C3E9491}",
+           "ref": "10",
+           "description": "GWFlowBaseBC_10",
+           "objects": [],
+           "type": "GWFlowBaseBC",
+           "caption": "GWFlowBaseBC_10"
+          }],
+         "caption": "Line_3_1"
+        }],
+       "caption": "Line_3"
+      },{
+       "uid": "{5664DBCD-1AA1-4D6B-8C57-B2B1E8F2DE3D}",
+       "description": "Line_4",
+       "objects": [
+        {
+         "uid": "{BFBB6482-770C-4E91-848F-2A6A39FE5232}",
+         "description": "Line_4_1",
+         "objects": [
+          {
+           "uid": "{2E3EDACC-59F2-4C02-930B-FB3E6FD885B1}",
+           "ref": "20",
+           "description": "GWFlowBaseBC_20",
+           "objects": [],
+           "type": "GWFlowBaseBC",
+           "caption": "GWFlowBaseBC_20"
+          }],
+         "caption": "Line_4_1"
+        }],
+       "caption": "Line_4"
+      },{
+       "uid": "{3A6BFF12-29B5-467D-B76F-485A5F18047F}",
+       "description": "Line_5",
+       "objects": [
+        {
+         "uid": "{02B5F0BF-E775-4D62-B802-504105453101}",
+         "description": "Line_5_1",
+         "objects": [
+          {
+           "uid": "{C994088E-23C9-4236-9945-B4EBC9E02892}",
+           "ref": "15",
+           "description": "GWFlowBaseBC_15",
+           "objects": [],
+           "type": "GWFlowBaseBC",
+           "caption": "GWFlowBaseBC_15"
+          }],
+         "caption": "Line_5_1"
+        }],
+       "caption": "Line_5"
+      }],
+     "caption": "\u7ebf"
+    },{
+     "uid": "{B2AD7AEE-BE7C-4632-9B5C-3226775CB8A4}",
+     "description": "SoilPolygons",
+     "objects": [
+      {
+       "uid": "{C5F120EE-0CC8-4B6D-8226-30540A98B079}",
+       "description": "BoreholePolygon_1",
+       "objects": [
+        {
+         "uid": "{0A4A100B-0B78-4229-957E-9CB7EAA2ED6F}",
+         "description": "BoreholePolygon_1_1",
+         "objects": [
+          {
+           "uid": "{DFD7C696-767D-464C-9917-FA0F21DD53D4}",
+           "ref": "1",
+           "description": "Soil_1_1",
+           "objects": [],
+           "type": "Soil",
+           "caption": "Soil_1_1"
+          }],
+         "caption": "BoreholePolygon_1_1"
+        },{
+         "uid": "{9E27A723-4B94-4FD6-B082-05365D90FE07}",
+         "description": "BoreholePolygon_1_2",
+         "objects": [
+          {
+           "uid": "{30265FDD-3B2E-48E0-B9EF-3C55BB912468}",
+           "ref": "2",
+           "description": "Soil_1_2",
+           "objects": [],
+           "type": "Soil",
+           "caption": "Soil_1_2"
+          }],
+         "caption": "BoreholePolygon_1_2"
+        },{
+         "uid": "{CAB969B5-2A61-43D5-B0B7-83CFA87BF7E0}",
+         "description": "BoreholePolygon_1_3",
+         "objects": [
+          {
+           "uid": "{A5AF0041-1E25-4FCE-BF5C-9FDB3B696DAD}",
+           "ref": "3",
+           "description": "Soil_1_3",
+           "objects": [],
+           "type": "Soil",
+           "caption": "Soil_1_3"
+          }],
+         "caption": "BoreholePolygon_1_3"
+        },{
+         "uid": "{19B08B7E-29DB-4BF5-8EA2-BC08FBB6BD54}",
+         "description": "BoreholePolygon_1_4",
+         "objects": [
+          {
+           "uid": "{37CE225C-97DD-480A-A3AE-A45E0E00D403}",
+           "ref": "4",
+           "description": "Soil_1_4",
+           "objects": [],
+           "type": "Soil",
+           "caption": "Soil_1_4"
+          }],
+         "caption": "BoreholePolygon_1_4"
+        },{
+         "uid": "{C563763B-DB78-4B20-B8F6-EB43FCF9C3D2}",
+         "description": "BoreholePolygon_1_5",
+         "objects": [
+          {
+           "uid": "{0A471C4F-DB85-4E4F-A764-F5CAC04262C1}",
+           "ref": "5",
+           "description": "Soil_1_5",
+           "objects": [],
+           "type": "Soil",
+           "caption": "Soil_1_5"
+          }],
+         "caption": "BoreholePolygon_1_5"
+        }],
+       "caption": "BoreholePolygon_1"
+      },{
+       "uid": "{59E40ACD-2E57-498F-8A12-184E11C8F788}",
+       "description": "BoreholePolygon_2",
+       "objects": [
+        {
+         "uid": "{85D0C6F4-65AD-4E7E-A5D8-0C25A9759908}",
+         "description": "BoreholePolygon_2_1",
+         "objects": [
+          {
+           "uid": "{3F496575-C3AC-48D1-A4BA-11D4634BDC87}",
+           "ref": "6",
+           "description": "Soil_2_1",
+           "objects": [],
+           "type": "Soil",
+           "caption": "Soil_2_1"
+          }],
+         "caption": "BoreholePolygon_2_1"
+        }],
+       "caption": "BoreholePolygon_2"
+      }],
+     "caption": "\u571f\u4f53\u591a\u8fb9\u5f62"
+    }],
+   "caption": "\u51e0\u4f55\u56fe\u5f62"
+  },{
+   "uid": "{53A40084-2730-4A7B-A7A0-CB694ADF1BD7}",
+   "description": "BoreholeWaterLevels",
+   "objects": [
+    {
+     "uid": "{94B4CB25-9B25-4A1C-8497-208228990B64}",
+     "description": "BoreholeWaterLevel_1",
+     "objects": [
+      {
+       "ref": "{DFD7C696-767D-464C-9917-FA0F21DD53D4}",
+       "objects": []
+      },{
+       "ref": "{30265FDD-3B2E-48E0-B9EF-3C55BB912468}",
+       "objects": []
+      },{
+       "ref": "{A5AF0041-1E25-4FCE-BF5C-9FDB3B696DAD}",
+       "objects": []
+      },{
+       "ref": "{37CE225C-97DD-480A-A3AE-A45E0E00D403}",
+       "objects": []
+      },{
+       "ref": "{0A471C4F-DB85-4E4F-A764-F5CAC04262C1}",
+       "objects": []
+      },{
+       "ref": "{3F496575-C3AC-48D1-A4BA-11D4634BDC87}",
+       "objects": []
+      }],
+     "caption": "BoreholeWaterLevel_1"
+    }],
+   "caption": "\u94bb\u5b54\u6c34\u4f4d\u7ebf"
+  },{
+   "uid": "{1D6FC57F-1D46-4774-8AFD-7C5987C1FCDD}",
+   "description": "FixedEndAnchors",
+   "objects": [
+    {
+     "uid": "{FEFDF67E-0440-47E2-9E63-CE10DD4A9A93}",
+     "description": "FixedEndAnchor_1",
+     "objects": [
+      {
+       "ref": "{3B73C550-BFD0-4875-858B-7C30F312D4A9}",
+       "objects": []
+      }],
+     "caption": "FixedEndAnchor_1"
+    },{
+     "uid": "{3695669D-7B09-4835-BB7E-992B9EA9B438}",
+     "description": "FixedEndAnchor_2",
+     "objects": [
+      {
+       "ref": "{F78CE661-47DC-4236-843B-53348CB2107B}",
+       "objects": []
+      }],
+     "caption": "FixedEndAnchor_2"
+    },{
+     "uid": "{AA885C4E-85E7-47FD-9E2B-495D80F802B8}",
+     "description": "FixedEndAnchor_3",
+     "objects": [
+      {
+       "ref": "{F1549472-7498-4B0F-8612-8F6C52073E11}",
+       "objects": []
+      }],
+     "caption": "FixedEndAnchor_3"
+    },{
+     "uid": "{34640D89-B9F0-46BF-AC1F-A9EB247D0BF9}",
+     "description": "FixedEndAnchor_4",
+     "objects": [
+      {
+       "ref": "{2E8A4472-59CF-4915-A6B5-BA97217F0929}",
+       "objects": []
+      }],
+     "caption": "FixedEndAnchor_4"
+    }],
+   "caption": "\u951a\u5b9a\u6746"
+  },{
+   "uid": "{EE860559-9709-4C24-BCD8-1F9ADF66F54B}",
+   "description": "Plates",
+   "objects": [
+    {
+     "uid": "{B93B9233-1E25-4FE1-A912-30AB18C0BC45}",
+     "description": "Plate_1",
+     "objects": [
+      {
+       "ref": "{61B2328E-2A7B-4411-B34B-31DAADE424A0}",
+       "objects": []
+      },{
+       "ref": "{69E079BC-A917-49BB-ACD8-237D1AA4AB5E}",
+       "objects": []
+      },{
+       "ref": "{40B65042-A514-488F-9D6B-7C383607C3EF}",
+       "objects": []
+      },{
+       "ref": "{41D84221-9799-4860-B10C-2D7BDF178CD5}",
+       "objects": []
+      },{
+       "ref": "{8C729789-71A7-4504-A1A1-AD6779ECBBCD}",
+       "objects": []
+      },{
+       "ref": "{0F881017-FC48-41A6-9470-54C99BC2E63E}",
+       "objects": []
+      },{
+       "ref": "{FC7F76DA-D5D7-49A1-8DC5-3E7EB466E524}",
+       "objects": []
+      },{
+       "ref": "{2FE1BF06-CE49-4D91-90B9-0A5EB0EE7BBC}",
+       "objects": []
+      },{
+       "ref": "{40DEE8B4-7133-4D96-9A44-D3235C1480FE}",
+       "objects": []
+      }],
+     "caption": "Plate_1"
+    }],
+   "caption": "\u677f"
+  },{
+   "uid": "{37B2FA4F-7C0D-4D51-A0F0-74753DF22722}",
+   "description": "Interfaces",
+   "objects": [
+    {
+     "uid": "{844DD09D-C71B-4F3A-A578-D9222F8CEF38}",
+     "description": "NegativeInterface_1",
+     "objects": [
+      {
+       "ref": "{7F97E477-B908-429D-8CAB-AC1DA83A29B0}",
+       "objects": []
+      },{
+       "ref": "{1966D61B-82D0-4400-B411-62BC9D0BAA64}",
+       "objects": []
+      },{
+       "ref": "{75392DB9-0682-4414-9ECF-D9183ED27F7D}",
+       "objects": []
+      },{
+       "ref": "{C1969E7F-C093-4046-84D5-748DD751D575}",
+       "objects": []
+      },{
+       "ref": "{FC4084A3-5CAA-4E3D-AF4D-BCB65DC0E8C8}",
+       "objects": []
+      },{
+       "ref": "{3B53A5D7-7184-4700-BE17-E80A136070CC}",
+       "objects": []
+      },{
+       "ref": "{F9051CD9-4A84-4488-9EDA-C0AB154F2CFC}",
+       "objects": []
+      },{
+       "ref": "{AF6ED539-93EA-42A6-81F4-E58FD490C974}",
+       "objects": []
+      },{
+       "ref": "{B942661C-2BA2-4A90-A522-F1499102B7F6}",
+       "objects": []
+      }],
+     "caption": "NegativeInterface_1"
+    },{
+     "uid": "{8B660E9B-1988-4403-AFCA-CC8DAB244ACB}",
+     "description": "PositiveInterface_1",
+     "objects": [
+      {
+       "ref": "{85B9AC07-EA79-40C1-BAA2-E534B8D6B74A}",
+       "objects": []
+      },{
+       "ref": "{594849DE-3C1C-43C4-BED5-1B68256488FB}",
+       "objects": []
+      },{
+       "ref": "{0EF6A07B-8E4A-43CE-B8E6-62F60EAB1D02}",
+       "objects": []
+      },{
+       "ref": "{4B66548D-FFDA-46AE-89E9-0D3FFB1BDA1B}",
+       "objects": []
+      },{
+       "ref": "{C49395F1-B901-415B-A247-87A51B64A66A}",
+       "objects": []
+      },{
+       "ref": "{D5FBBEC2-2422-46F7-B906-D504764694B5}",
+       "objects": []
+      },{
+       "ref": "{97C26ACD-53D3-40EA-A791-3E8F1A82DF9E}",
+       "objects": []
+      },{
+       "ref": "{63AC4EDB-A212-4934-885A-B124B900A2BA}",
+       "objects": []
+      },{
+       "ref": "{2858B49D-B0BD-4878-8E51-CD1B07195221}",
+       "objects": []
+      }],
+     "caption": "PositiveInterface_1"
+    }],
+   "caption": "\u754c\u9762"
+  },{
+   "uid": "{DAE519E1-B0FD-4057-95B7-CAAD5A08DBC6}",
+   "description": "Soils",
+   "objects": [
+    {
+     "uid": "{217B0362-2A0E-4900-8A05-06968D40CF26}",
+     "description": "Soil_1",
+     "objects": [
+      {
+       "ref": "{DFD7C696-767D-464C-9917-FA0F21DD53D4}",
+       "objects": []
+      },{
+       "ref": "{30265FDD-3B2E-48E0-B9EF-3C55BB912468}",
+       "objects": []
+      },{
+       "ref": "{A5AF0041-1E25-4FCE-BF5C-9FDB3B696DAD}",
+       "objects": []
+      },{
+       "ref": "{37CE225C-97DD-480A-A3AE-A45E0E00D403}",
+       "objects": []
+      },{
+       "ref": "{0A471C4F-DB85-4E4F-A764-F5CAC04262C1}",
+       "objects": []
+      }],
+     "caption": "Soil_1"
+    },{
+     "uid": "{3C6717EC-215A-4571-909F-B5E1DC7B19BE}",
+     "description": "Soil_2",
+     "objects": [
+      {
+       "ref": "{3F496575-C3AC-48D1-A4BA-11D4634BDC87}",
+       "objects": []
+      }],
+     "caption": "Soil_2"
+    }],
+   "caption": "\u571f\u4f53"
+  }],
+ "type": "Phase",
+ "caption": "Model"
+}

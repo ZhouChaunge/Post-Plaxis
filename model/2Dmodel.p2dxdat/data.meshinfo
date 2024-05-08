@@ -1,0 +1,143 @@
+ *****************************************
+ *                                       *
+ *    Original copyright (c) 1982-2008   *
+ *        Ingenieursbureau SEPRA         *
+ *       Copyright (c) 2008-2015         *
+ *             Plaxis bv                 *
+ *                                       *
+ *****************************************
+
+ 64-bit executable
+ Last compiled:         2024 /           5 /           5  at           18 :
+           8 :          17
+ 
+ Now: 05-05-2024 18:08:17.671
+ Size of buffer array:   500000000
+ CPU_Time:  0.125000000000000     
+ MESH2D
+   coarse ( unit =  4.920365840057017E+00 )
+ POINTS
+   P01 =  HardPoint (  5.000000000000000E+01 ,  1.900000000000000E+01 ,  2.500000000000000E-01 )
+   P02 =  HardPoint (  5.000000000000000E+01 ,  1.500000000000000E+01 ,  2.500000000000000E-01 )
+   P03 =  HardPoint (  5.000000000000000E+01 ,  9.000000000000000E+00 ,  2.500000000000000E-01 )
+   P04 =  HardPoint (  5.000000000000000E+01 ,  3.000000000000000E+00 ,  2.500000000000000E-01 )
+   P05 =  HardPoint (  0.000000000000000E+00 ,  2.000000000000000E+01 ,  1.000000000000000E+00 )
+   P06 =  HardPoint (  5.000000000000000E+01 ,  2.000000000000000E+01 ,  2.500000000000000E-01 )
+   P07 =  HardPoint (  6.500000000000000E+01 ,  2.000000000000000E+01 ,  1.000000000000000E+00 )
+   P08 =  HardPoint (  6.500000000000000E+01 ,  1.800000000000000E+01 ,  1.000000000000000E+00 )
+   P09 =  HardPoint (  5.000000000000000E+01 ,  1.800000000000000E+01 ,  2.500000000000000E-01 )
+   P10 =  HardPoint (  6.500000000000000E+01 ,  1.200000000000000E+01 ,  1.000000000000000E+00 )
+   P11 =  HardPoint (  5.000000000000000E+01 ,  1.200000000000000E+01 ,  2.500000000000000E-01 )
+   P12 =  HardPoint (  0.000000000000000E+00 ,  0.000000000000000E+00 ,  1.000000000000000E+00 )
+   P13 =  HardPoint (  6.500000000000000E+01 ,  6.000000000000000E+00 ,  1.000000000000000E+00 )
+   P14 =  HardPoint (  5.000000000000000E+01 ,  6.000000000000000E+00 ,  2.500000000000000E-01 )
+   P15 =  HardPoint (  6.500000000000000E+01 ,  0.000000000000000E+00 ,  1.000000000000000E+00 )
+   P16 =  HardPoint (  5.000000000000000E+01 ,  0.000000000000000E+00 ,  2.500000000000000E-01 )
+   P17 =  HardPoint (  5.000000000000000E+01 , -2.000000000000000E+01 ,  2.500000000000000E-01 )
+   P18 =  HardPoint (  0.000000000000000E+00 , -3.000000000000000E+01 ,  1.000000000000000E+00 )
+   P19 =  HardPoint (  6.500000000000000E+01 , -3.000000000000000E+01 ,  1.000000000000000E+00 )
+ CURVES
+   C01 =  CLine 3 ( P05 , P06 )
+   C02 =  CLine 3 ( P06 , P07 )
+   C03 =  CLine 3 ( P06 , P01 )
+   C04 =  CLine 3 ( P07 , P08 )
+   C05 =  CLine 3 ( P01 , P09 )
+   C06 =  CLine 3 ( P09 , P08 )
+   C07 =  CLine 3 ( P09 , P02 )
+   C08 =  CLine 3 ( P08 , P10 )
+   C09 =  CLine 3 ( P02 , P11 )
+   C10 =  CLine 3 ( P11 , P10 )
+   C11 =  CLine 3 ( P11 , P03 )
+   C12 =  CLine 3 ( P12 , P05 )
+   C13 =  CLine 3 ( P10 , P13 )
+   C14 =  CLine 3 ( P03 , P14 )
+   C15 =  CLine 3 ( P14 , P13 )
+   C16 =  CLine 3 ( P14 , P04 )
+   C17 =  CLine 3 ( P13 , P15 )
+   C18 =  CLine 3 ( P04 , P16 )
+   C19 =  CLine 3 ( P16 , P12 )
+   C20 =  CLine 3 ( P16 , P15 )
+   C21 =  CLine 3 ( P16 , P17 )
+   C22 =  CLine 3 ( P18 , P12 )
+   C23 =  CLine 3 ( P15 , P19 )
+   C24 =  CLine 3 ( P19 , P18 )
+ SURFACES
+   S01 =  Triangle 5 (-C03,  C02,  C04, -C06, -C05 )
+   S02 =  Triangle 5 (-C07,  C06,  C08, -C10, -C09 )
+   S03 =  Triangle 5 ( C03,  C05,  C07,  C09,  C11,  C14,  C16,  C18,  C19,  C12,  C01 )
+   S04 =  Triangle 5 (-C11,  C10,  C13, -C15, -C14 )
+   S05 =  Triangle 5 (-C16,  C15,  C17, -C20, -C18 )
+   S06 =  Triangle 5 ( C21, -C21,  C20,  C23,  C24,  C22, -C19 )
+ INTERFACE_ELEMENTS
+   IELM01 = CURVES( -C03)
+   IELM02 = CURVES( C03)
+   IELM03 = CURVES( -C05)
+   IELM04 = CURVES( C05)
+   IELM05 = CURVES( -C07)
+   IELM06 = CURVES( C07)
+   IELM07 = CURVES( -C09)
+   IELM08 = CURVES( C09)
+   IELM09 = CURVES( -C11)
+   IELM10 = CURVES( C11)
+   IELM11 = CURVES( -C14)
+   IELM12 = CURVES( C14)
+   IELM13 = CURVES( -C16)
+   IELM14 = CURVES( C16)
+   IELM15 = CURVES( -C18)
+   IELM16 = CURVES( C18)
+   IELM17 = CURVES( -C21)
+   IELM18 = CURVES( C21)
+ MAPPINGS
+  new input file is read          131
+ 
+ *** Information about geometry ***
+ Smallest distance between two points is:  1.000000000000000E+307
+ The points are:           0           0
+ Smallest distance between two curves is:  1.000000000000000E+307
+ The two curves are:           0           0
+ No local refinements on lines.
+ Smallest coarseness is  0.250000000000000     
+ in point           1
+ total number of adaptations coarseness =           2
+  i     original  / resulting coarseness factors
+           1  0.250000000000000       0.250000000000000     
+           2  0.250000000000000       0.250000000000000     
+           3  0.250000000000000       0.250000000000000     
+           4  0.250000000000000       0.250000000000000     
+           5   1.00000000000000        1.00000000000000     
+           6  0.250000000000000       0.250000000000000     
+           7   1.00000000000000       0.609710760849692     
+           8   1.00000000000000       0.609710760849692     
+           9  0.250000000000000       0.250000000000000     
+          10   1.00000000000000        1.00000000000000     
+          11  0.250000000000000       0.250000000000000     
+          12   1.00000000000000        1.00000000000000     
+          13   1.00000000000000        1.00000000000000     
+          14  0.250000000000000       0.250000000000000     
+          15   1.00000000000000        1.00000000000000     
+          16  0.250000000000000       0.250000000000000     
+          17  0.250000000000000       0.250000000000000     
+          18   1.00000000000000        1.00000000000000     
+          19   1.00000000000000        1.00000000000000     
+ Coarseness points
+ Required, used:        1114           0
+ Too much space allocated for coarseness points
+ Required, used:        1114           0
+ Creating a new array
+ CPU_Time:  0.125000000000000     
+ Elements merged in surface           1
+smallest ratio of elements of surface      1 is  7.68367E-01 in element    13 of the     17 elements
+ Elements merged in surface           2
+smallest ratio of elements of surface      2 is  7.69592E-01 in element    21 of the     32 elements
+ Elements merged in surface           3
+smallest ratio of elements of surface      3 is  6.39799E-01 in element   195 of the    248 elements
+ Elements merged in surface           4
+smallest ratio of elements of surface      4 is  6.35424E-01 in element    26 of the     27 elements
+ Elements merged in surface           5
+smallest ratio of elements of surface      5 is  6.35424E-01 in element    26 of the     27 elements
+ Elements merged in surface           6
+smallest ratio of elements of surface      6 is  5.34552E-01 in element   335 of the    358 elements
+ number of nodal points    6036
+ number of elements     769
+ CPU_Time:  0.125000000000000     
+ CPU_Time:  0.125000000000000     
