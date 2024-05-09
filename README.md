@@ -29,7 +29,8 @@
 
         conda crate -n plaxis37 python=3.7 #创建名为pyplaxis37的python环境
         conda activate plaxis37            # 在当前目录下激活pyabaqus37环境
-        pip install -r requirements.txt   # 安装基础依赖库
+        pip install -r requirements.txt    # 安装所需要基础依赖库
+   这里重点强调一下，一定要确保`plaxis37`环境已经被激活，才可以利用`pip install -r requirements.txt`，否则将会在您`base`环境中安装依赖库，这将导致版本冲突，甚至会使得`base`环境损坏！！！
 
 
 这里已经默认您的电脑安装了`Anaconda`软件，无论你采用哪一种方式，在完成上面的环境配置之后，会在`.../Anaconda/envs/`目录下会生成文件夹`plaxis37`用于存放相关的依赖文件，如下所示：
