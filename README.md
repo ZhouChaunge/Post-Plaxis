@@ -16,21 +16,23 @@
 
 ## 2.Python环境依赖
 
-若想调用第三方程序对 Plaxis 进行后处理，需要安装特定的依赖库。首先可以创建专门针对Plaxis后处理的开发环境，代码如下所示：
+这个项目提供了两种环境配置方案，分别是`environment.yaml`和`requirements.txt`的方式。
+1. 利用`yaml`配置环境
+   
+   你可以在这个项目文件夹下，右键运行`cmd`进入控制台，然后运行下面代码:
 
-    conda crate -n plaxis37 python=3.7 #创建名为pyplaxis37的python环境
+        conda env create -f environment.yaml
 
-    conda activate plaxis37            # 在当前目录下激活pyabaqus37环境
-    
-    pip install numpy                  # 安装numpy库
+3. 利用`txt`配置环境
+   
+   如果想要利用`requirements.txt`文件来配置环境，右键打开`cmd`进入控制台，依次输入下面代码：
 
-    pip install pandas                 # 安装pandas库
+        conda crate -n plaxis37 python=3.7 #创建名为pyplaxis37的python环境
+        conda activate plaxis37            # 在当前目录下激活pyabaqus37环境
+        pip install -r requirements.txt   # 安装基础依赖库
 
-    pip install matplotlib             # 安装matplotlib库
 
-    pip install openpyxl               # 安装openpyxl库
-
-这里默认已经掌握了在`Anaconda`中创建环境，在运行完第一句`conda crate -n plaxis37 python=3.7`后，在`.../Anaconda/envs/`目录下会生成文件夹`plaxis37`用于存放相关的依赖文件，如下所示：
+这里已经默认您的电脑安装了`Anaconda`软件，无论你采用哪一种方式，在完成上面的环境配置之后，会在`.../Anaconda/envs/`目录下会生成文件夹`plaxis37`用于存放相关的依赖文件，如下所示：
 ![envir_dir.png](https://raw.githubusercontent.com/ZhouChaunge/Post-Plaxis/main/image/envir_dir.png)
 
 
