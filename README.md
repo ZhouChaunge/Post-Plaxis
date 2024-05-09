@@ -27,9 +27,9 @@
    
    如果想要利用`requirements.txt`文件来配置环境，右键打开`cmd`进入控制台，依次输入下面代码：
 
-        conda crate -n plaxis37 python=3.7 #创建名为pyplaxis37的python环境
-        conda activate plaxis37            # 在当前目录下激活pyabaqus37环境
-        pip install -r requirements.txt    # 安装所需要基础依赖库
+        conda create -n plaxis37 python=3.7 # 创建名为pyplaxis37的python环境
+        conda activate plaxis37             # 在当前目录下激活pyabaqus37环境
+        pip install -r requirements.txt     # 安装所需要基础依赖库
    这里重点强调一下，一定要确保`plaxis37`环境已经被激活，才可以利用`pip install -r requirements.txt`，否则将会在您`base`环境中安装依赖库，这将导致版本冲突，甚至会使得`base`环境损坏！！！
 
 
