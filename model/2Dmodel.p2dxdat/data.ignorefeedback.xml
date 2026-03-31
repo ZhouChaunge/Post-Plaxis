@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<settings id="{ECC8E017-1CC9-4F50-8BDC-154291862EB1}" name="PlxSettingsWithDefault_1">
+  <Text id="{D8908F79-4F32-4119-ACC7-E510E2637692}" name="Metadata"/>
+  <Boolean id="{E38CCFE4-92D7-47FC-BC67-BE6F6F47417B}" name="IgnoreNoNodesForCurves">true</Boolean>
+</settings>

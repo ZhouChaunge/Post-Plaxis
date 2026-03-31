@@ -1,0 +1,33 @@
+[General]
+Version=0
+CalcMode=Classic
+CalcType=
+ErrorCode=0
+ErrorMsg=OK
+StepsCount=6
+ErrorParams=
+DateTime=08-05-2024 19:04
+[Step001]
+DateTime=08-05-2024 19:04
+LeadNumber=-1
+LeadFinished=False
+[Step002]
+DateTime=08-05-2024 19:04
+LeadNumber=-1
+LeadFinished=False
+[Step003]
+DateTime=08-05-2024 19:04
+LeadNumber=-1
+LeadFinished=False
+[Step004]
+DateTime=08-05-2024 19:04
+LeadNumber=-1
+LeadFinished=False
+[Step005]
+DateTime=08-05-2024 19:04
+LeadNumber=-1
+LeadFinished=False
+[Step006]
+DateTime=08-05-2024 19:04
+LeadNumber=-1
+LeadFinished=False

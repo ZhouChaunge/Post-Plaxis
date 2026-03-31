@@ -1,0 +1,19 @@
+ DATE 2023-08-10 TIME 18:12:01.853
+ Reference project:
+   F:\012-20230711-基坑开挖参数敏感性分析\test
+ Executable directory:
+   E:\Program Files\Bentley\Geotechnical\PLAXIS 2D CONNECT Edition V22\kernel\
+ Executable date:
+   Apr 19 2022 14:51:00
+
+ ========================================================
+ ========================================================
+ PHASE 0: "+Uh1Zy5Y2a7U"
+
+
+ ========================================================
+ ========================================================
+ PHASE SUMMARY
+ ========================================================
+ ========================================================
+ NaN found during calculation, probably severe divergence

@@ -1,0 +1,1926 @@
+﻿##~ running Plaxis2DXInput.exe 22.1.0.452
+_setproperties "Title" "" "Company" "" "Comments" "" "UnitForce" "kN" "UnitLength" "m" "UnitTime" "day" "UnitTemperature" "K" "UnitEnergy" "kJ" "UnitPower" "kW" "WaterWeight" 10 "ReferenceTemperature" 293.15 "LiquidSpecificHeatCapacity" 4181.3 "LiquidThermalConductivity" 0.0006 "LiquidLatentHeat" 334000 "LiquidThermalExpansion" 0.00021 "LiquidTemperature" 293.15 "IceSpecificHeatCapacity" 2108 "IceThermalConductivity" 0.00222 "IceThermalExpansion" 5E-5 "VapourSpecificHeatCapacity" 1930 "VapourThermalConductivity" 2.5E-5 "VapourSpecificGasConstant" 461.5 "UseTemperatureDepWaterPropsTable" False "ModelType" "Plane strain" "ElementType" "15-Noded"
+_initializerectangular SoilContour 0 -30 65 20
+_borehole 0
+_soillayer 0
+_set Soillayer_1.Zones[0].Top 20
+_soillayer 0
+_set Soillayer_2.Zones[0].Bottom -30
+_set Borehole_1.Head 18
+_soilmat
+_set Soillayer_1.Soil.Material SoilMat_1
+_set SoilMat_1.Identification "土层1"
+_set 土层1.SoilModel "Soft Soil"
+_set 土层1.DrainageType "Undrained A"
+_set 土层1.gammaUnsat 16
+_set 土层1.gammaSat 18
+_set 土层1.eInit 1
+_set 土层1.lambdaModified 0.03
+_set 土层1.kappaModified 0.0085
+_set 土层1.cRef 1
+_set 土层1.phi 25
+_set 土层1.PermHorizontalPrimary 0.001
+_set 土层1.PermVertical 0.001
+_set 土层1.POP 5
+_soilmat
+_set Soillayer_2.Soil.Material SoilMat_1
+_set SoilMat_1.Identification "土层2"
+_set 土层2.SoilModel "Hardening Soil"
+_set 土层2.gammaUnsat 17
+_set 土层2.gammaSat 20
+_set 土层2.E50Ref 40000
+_set 土层2.phi 32
+_set 土层2.psi 2
+_set 土层2.PermHorizontalPrimary 1
+_set 土层2.PermVertical 1
+_set 土层2.InterfaceStrengthDetermination "Manual"
+_set 土层2.Rinter 0.67
+_set 土层1.InterfaceStrengthDetermination "Manual"
+_set 土层1.InterfaceStrengthDetermination "Manual with residual strength"
+_set 土层1.InterfaceStrengthDetermination "Rigid"
+_set 土层1.InterfaceStrengthDetermination "Manual"
+_set 土层1.Rinter 0.5
+_gotostructures
+_plate (50 20) (50 -10)
+_platemat "MaterialType" "Elastic"
+_set PlateMat_1.Identification "地连墙"
+_set 地连墙.EA1 7500000
+_set 地连墙.EI 1000000
+_set 地连墙.W 10
+_setmaterial (Plate_1) 地连墙
+_posinterface (Line_1)
+_neginterface (Line_1)
+_line (50 18) (65 18)
+_line (50 10) (65 10)
+_line (50 0) (65 0)
+_fixedendanchor (50 19)
+_anchormat "MaterialType" "Elastic"
+_set AnchorMat_1.Identification "支撑"
+_set 支撑.LSpacing 5
+_set 支撑.EA 2000000
+_setmaterial (FixedEndAnchor_1) 支撑
+_set Point_9.FixedEndAnchor.Direction_x 15
+_lineload (43 20) (48 20)
+_set Line_5.LineLoad.qy_start -5
+_mergeequivalents Geometry
+_gotomesh
+_mesh 0.06
+_viewmesh
+_viewmesh
+_gotoflow
+_gotostages
+_phase InitialPhase
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase InitialPhase
+_set Phase_1.Identification "load"
+_activate (Plate_1_5 Plate_1_4 Plate_1_3 Plate_1_2 Plate_1_1) InitialPhase
+_activate (PositiveInterface_1_5 PositiveInterface_1_4 PositiveInterface_1_3 PositiveInterface_1_2 PositiveInterface_1_1) InitialPhase
+_activate (NegativeInterface_1_5 NegativeInterface_1_4 NegativeInterface_1_3 NegativeInterface_1_2 NegativeInterface_1_1) InitialPhase
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase InitialPhase
+_deactivate (Plate_1_5 Plate_1_4 Plate_1_3 Plate_1_2 Plate_1_1) InitialPhase
+_deactivate (PositiveInterface_1_5 PositiveInterface_1_4 PositiveInterface_1_3 PositiveInterface_1_2 PositiveInterface_1_1) InitialPhase
+_deactivate (NegativeInterface_1_5 NegativeInterface_1_4 NegativeInterface_1_3 NegativeInterface_1_2 NegativeInterface_1_1) InitialPhase
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase InitialPhase
+_activate (Plate_1_1 Plate_1_2 Plate_1_3 Plate_1_4 Plate_1_5) InitialPhase
+_deactivate (Plate_1_1 Plate_1_2 Plate_1_3 Plate_1_4 Plate_1_5) InitialPhase
+_activate (Plate_1_1 Plate_1_2 Plate_1_3 Plate_1_4 Plate_1_5) InitialPhase
+_deactivate (Plate_1_1 Plate_1_2 Plate_1_3 Plate_1_4 Plate_1_5) InitialPhase
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase InitialPhase
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase InitialPhase
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase InitialPhase
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase InitialPhase
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase InitialPhase
+_set Model.CurrentPhase Phase_1
+_activate (Plate_1_5 Plate_1_4 Plate_1_3 Plate_1_2 Plate_1_1) Phase_1
+_activate (PositiveInterface_1_5 PositiveInterface_1_4 PositiveInterface_1_3 PositiveInterface_1_2 PositiveInterface_1_1) Phase_1
+_activate (NegativeInterface_1_5 NegativeInterface_1_4 NegativeInterface_1_3 NegativeInterface_1_2 NegativeInterface_1_1) Phase_1
+_set Model.CurrentPhase InitialPhase
+_set Model.CurrentPhase Phase_1
+_activate (Line_5_1) Phase_1
+_phase Phase_1
+_set Model.CurrentPhase Phase_2
+_set Phase_2.Identification "ex-1"
+_deactivate (BoreholePolygon_1_1) Phase_2
+_phase Phase_2
+_set Model.CurrentPhase Phase_3
+_set Phase_3.Identification "support1"
+_activate (Point_9_1) Phase_3
+_phase Phase_3
+_set Model.CurrentPhase Phase_4
+_set Phase_4.Identification "ex-2"
+_activate (BoreholePolygon_1_2) Phase_4
+_deactivate (BoreholePolygon_1_2) Phase_4
+_phase Phase_4
+_set Model.CurrentPhase Phase_5
+_set Phase_5.Identification "ex-3"
+_deactivate (BoreholePolygon_1_4) Phase_5
+_set Model.CurrentPhase InitialPhase
+_calculate
+_view InitialPhase
+##~ running Plaxis2DXInput.exe 22.1.0.452
+_gotosoil
+_mergeequivalents Geometry
+_gotostages
+_view InitialPhase
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_1
+_gotosoil
+_soilmat "SoilModel" "Mohr-Coulomb"
+_set SoilMat_1.Identification "ss"
+_set Ss.SoilModel "User-defined"
+_set Ss.DrainageType "Undrained A"
+_set Ss.DllFile "wuyuzi64.dll"
+_set Ss.ModelInDll "Shanghai model"
+_set Ss.User1 1
+_set Ss.User2 0.3
+_set Ss.User3 1.3
+_set Ss.User4 0.2
+_set Ss.User5 0.02
+_set Ss.User6 1
+_set Ss.User7 1
+_set Ss.User11 1
+_set Ss.User12 1
+_set Ss.User13 1
+_set Ss.EoedInter 3500
+_set Ss.PhiInter 30
+_set Ss.CInter 1
+_set Soillayer_1.Soil.Material Ss
+_mergeequivalents Geometry
+_gotostages
+_set Model.CurrentPhase InitialPhase
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_set Model.CurrentPhase Phase_1
+_set Phase_1.Deform.UseDefaultIterationParams False
+_set Phase_1.Deform.MaxLoadFractionPerStep 0.1
+_set Phase_1.ShouldCalculate True
+_set Model.CurrentPhase InitialPhase
+_calculate
+_set Model.CurrentPhase Phase_1
+_set Phase_1.Deform.MaxLoadFractionPerStep 0.01
+_set Phase_1.ShouldCalculate True
+_calculate
+_gotosoil
+_set Line_5.LineLoad.qy_start 0
+_mergeequivalents Geometry
+_gotostages
+_set Phase_1.ShouldCalculate True
+_set Model.CurrentPhase InitialPhase
+_calculate
+_set Model.CurrentPhase Phase_1
+_set Phase_1.ShouldCalculate True
+_gotosoil
+_mergeequivalents Geometry
+_gotostages
+_gotosoil
+_set Ss.gammaUnsat 18
+_set Ss.gammaSat 18
+_mergeequivalents Geometry
+_gotostages
+_calculate
+_set Phase_1.DeformCalcType "Consolidation"
+_set Phase_1.DeformCalcType "Plastic"
+_set Phase_1.DeformCalcType "Consolidation"
+_set Phase_1.DeformCalcType "Plastic"
+_set Phase_1.Deform.MaxLoadFractionPerStep 0.1
+_set Phase_1.ShouldCalculate True
+_calculate
+_set Model.CurrentPhase InitialPhase
+_set InitialPhase.DeformCalcType "Field stress"
+_set InitialPhase.DeformCalcType "Gravity loading"
+_set InitialPhase.Deform.SumMweight 1
+_calculate
+_set InitialPhase.DeformCalcType "K0 procedure"
+_calculate
+_view InitialPhase
+_gotosoil
+_mergeequivalents Geometry
+_gotostages
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase InitialPhase
+_set Model.CurrentPhase Phase_1
+##~ running Plaxis2DXInput.exe 22.1.0.452
+_gotostructures
+_gotosoil
+_set Soillayer_2.Soil.Material Ss
+_set Ss.DllFile "20230801unifiedmodel64.dll"
+_set Ss.ModelInDll "Shanghai model"
+_set Ss.User1 1
+_set Ss.User2 0.3
+_set Ss.User3 1.3
+_set Ss.User4 0.2
+_set Ss.User5 0.02
+_set Ss.User6 1
+_set Ss.User7 1
+_set Ss.User11 1
+_set Ss.User12 1
+_set Ss.User13 1
+_gotostructures
+_delete (Line_5)
+_delete (Point_11)
+_delete (Point_10)
+_mergeequivalents Geometry
+_gotomesh
+_mesh 0.04002
+_gotostages
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_3
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_1
+_set Phase_1.Identification "地连墙施工"
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_3
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_3
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_1
+_delete Phase_2
+_set Model.CurrentPhase Phase_3
+_set Phase_3.Identification "开挖+支护1"
+_set Model.CurrentPhase Phase_4
+_set Model.CurrentPhase Phase_3
+_set Model.CurrentPhase Phase_4
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase Phase_3
+_set Model.CurrentPhase Phase_4
+_set Phase_4.Identification "开挖2"
+_set Model.CurrentPhase Phase_5
+_set Phase_5.Identification "开挖3"
+_set Model.CurrentPhase InitialPhase
+_calculate
+_view InitialPhase
+##~ running Plaxis2DXInput.exe 22.1.0.452
+_view InitialPhase
+_set Model.CurrentPhase Phase_4
+_set Model.CurrentPhase Phase_3
+_set Model.CurrentPhase Phase_5
+_set Model.CurrentPhase Phase_4
+_delete Phase_5
+_set Model.CurrentPhase Phase_3
+_delete Phase_4
+_set Model.CurrentPhase Phase_1
+_delete Phase_3
+_phase Phase_1
+_set Model.CurrentPhase Phase_2
+_activate (BoreholePolygon_1_1) Phase_2
+_deactivate (BoreholePolygon_1_1) Phase_2
+_activate (Point_9_1) Phase_2
+_set Phase_2.Identification "开挖+支护1"
+_phase Phase_2
+_set Model.CurrentPhase Phase_3
+_set Phase_3.Identification "开挖2"
+_deactivate (BoreholePolygon_1_2) Phase_3
+_phase Phase_3
+_set Model.CurrentPhase Phase_4
+_set Phase_4.Identification "开挖3"
+_deactivate (BoreholePolygon_1_4) Phase_4
+_set Model.CurrentPhase Phase_2
+_calculate
+_view Phase_2
+_view Phase_2
+_gotostructures
+_gotosoil
+_gotostructures
+##~ running Plaxis2DXInput.exe 22.1.0.452
+_mergeequivalents Geometry
+_gotostages
+_view Phase_2
+##~ running Plaxis2DXInput.exe 22.1.0.452
+_view Phase_2
+_view Phase_2
+_view Phase_2
+##~ running Plaxis2DXInput.exe 22.1.0.452
+_view Phase_2
+_view Phase_2
+_gotosoil
+_set Ss.User1 0.757
+_set Ss.User2 0.32
+_set Ss.User3 1.2
+_set Ss.User4 0.087
+_set Ss.User12 8
+_set Ss.User13 0.5
+_set Ss.User12 1
+_mergeequivalents Geometry
+_gotostages
+_set Model.CurrentPhase InitialPhase
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_set Model.CurrentPhase Phase_2
+_set Phase_2.ShouldCalculate True
+_set Phase_2.ShouldCalculate False
+##~ running Plaxis2DXInput.exe 22.1.0.452
+_set Phase_2.Deform.UseDefaultIterationParams False
+##~ running Plaxis2DXInput.exe 22.1.0.452
+_set Phase_2.Deform.MaxLoadFractionPerStep 0.1
+_set Phase_2.Deform.MaxSteps 2000
+_set Phase_2.ShouldCalculate True
+_calculate
+_set Phase_2.Deform.MaxLoadFractionPerStep 0.01
+_set Phase_2.ShouldCalculate True
+_calculate
+_gotosoil
+_set Ss.User12 5
+_mergeequivalents Geometry
+_gotostages
+_set Phase_2.ShouldCalculate True
+_set Model.CurrentPhase Phase_1
+_set Phase_1.ShouldCalculate True
+_set Model.CurrentPhase InitialPhase
+_set InitialPhase.ShouldCalculate True
+_set InitialPhase.ShouldCalculate False
+_set Model.CurrentPhase Phase_1
+_set Phase_1.ShouldCalculate False
+_set Model.CurrentPhase InitialPhase
+_set InitialPhase.ShouldCalculate True
+_set InitialPhase.ShouldCalculate False
+_set InitialPhase.ShouldCalculate True
+_set Model.CurrentPhase Phase_1
+_set Phase_1.ShouldCalculate True
+_set Phase_1.ShouldCalculate False
+_set Model.CurrentPhase Phase_4
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_1
+_set Phase_1.ShouldCalculate True
+_set Model.CurrentPhase InitialPhase
+_calculate
+_set Model.CurrentPhase Phase_2
+_view Phase_2
+_gotosoil
+_set Ss.User1 0.86
+_set Ss.User2 0.4
+_set Ss.User3 1.35
+_mergeequivalents Geometry
+_gotostages
+_set Phase_2.ShouldCalculate True
+_set Model.CurrentPhase Phase_1
+_set Phase_1.ShouldCalculate True
+_set Phase_1.Deform.MaxLoadFractionPerStep 0.05
+_set Model.CurrentPhase InitialPhase
+_set InitialPhase.ShouldCalculate True
+_set InitialPhase.ShouldCalculate False
+_set InitialPhase.ShouldCalculate True
+_calculate
+_set Model.CurrentPhase Phase_1
+_gotosoil
+_set Ss.User12 1
+_set Ss.User13 1
+_mergeequivalents Geometry
+_gotostages
+_set Phase_1.ShouldCalculate True
+_set Model.CurrentPhase InitialPhase
+_set InitialPhase.ShouldCalculate True
+_set InitialPhase.ShouldCalculate False
+_set InitialPhase.ShouldCalculate True
+_calculate
+_set Model.CurrentPhase Phase_1
+_set Phase_1.ShouldCalculate True
+_set Phase_1.ShouldCalculate False
+_set Phase_1.ShouldCalculate True
+_set Phase_1.ShouldCalculate False
+##~ running Plaxis2DXInput.exe 22.1.0.452
+_set Phase_1.ShouldCalculate True
+_set Phase_1.ShouldCalculate False
+_gotosoil
+_set Ss.User1 1
+_set Ss.User2 0.3
+_set Ss.User3 1.3
+_set Ss.User4 0.2
+_mergeequivalents Geometry
+_gotostages
+_set Phase_1.ShouldCalculate True
+_set Model.CurrentPhase InitialPhase
+_set InitialPhase.ShouldCalculate True
+_set InitialPhase.ShouldCalculate False
+_set InitialPhase.ShouldCalculate True
+_calculate
+_set Model.CurrentPhase Phase_2
+_set Phase_2.ShouldCalculate True
+_gotosoil
+_mergeequivalents Geometry
+_gotostages
+_set Model.CurrentPhase Phase_1
+_set Phase_1.Deform.MaxLoadFractionPerStep 0.1
+_set Model.CurrentPhase Phase_3
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_1
+_set Phase_1.ShouldCalculate True
+_set Model.CurrentPhase InitialPhase
+_set InitialPhase.ShouldCalculate True
+_calculate
+_set Model.CurrentPhase Phase_2
+_set Phase_2.ShouldCalculate True
+_set Phase_2.ShouldCalculate False
+_set Phase_2.ShouldCalculate True
+##~ running Plaxis2DXInput.exe 22.1.0.452
+_set Model.CurrentPhase Phase_1
+##~ running Plaxis2DXInput.exe 22.1.0.452
+_set Phase_1.ShouldCalculate True
+_set Model.CurrentPhase InitialPhase
+_set InitialPhase.ShouldCalculate True
+_calculate
+_gotosoil
+_mergeequivalents Geometry
+_gotostages
+_set Model.CurrentPhase Phase_1
+_set Phase_1.Deform.MaxLoadFractionPerStep 0.5
+_set Model.CurrentPhase Phase_2
+_set Phase_2.Deform.UseDefaultIterationParams True
+_set Model.CurrentPhase Phase_3
+_set Model.CurrentPhase Phase_4
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase Phase_2
+_set Phase_2.ShouldCalculate True
+_set Model.CurrentPhase Phase_1
+_set Phase_1.ShouldCalculate True
+_set Model.CurrentPhase InitialPhase
+_set InitialPhase.ShouldCalculate True
+_calculate
+_set Model.CurrentPhase Phase_1
+_set Phase_1.Deform.MaxLoadFractionPerStep 0.1
+_set Model.CurrentPhase InitialPhase
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_gotosoil
+_mergeequivalents Geometry
+_gotostages
+_set Model.CurrentPhase Phase_1
+_set Phase_1.Deform.MaxLoadFractionPerStep 0.05
+_gotosoil
+_set Ss.User6 0
+_set Ss.User6 1
+_set Ss.User13 0.5
+_set Ss.User6 0.01
+_mergeequivalents Geometry
+_gotostages
+_set Model.CurrentPhase InitialPhase
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_gotosoil
+_set Ss.User6 0.1
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_set Model.CurrentPhase Phase_4
+_set Phase_4.Deform.UseDefaultIterationParams False
+_set Phase_4.Deform.MaxLoadFractionPerStep 0.1
+_set Phase_4.ShouldCalculate True
+_calculate
+_view Phase_4
+_gotosoil
+_set Ss.User6 1
+_set Ss.User6 0.1
+##~ running Plaxis2DXInput.exe 22.1.0.452
+_set Ss.User12 3
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_set Phase_4.Deform.UseDefaultIterationParams True
+_set Phase_4.ShouldCalculate True
+_calculate
+_set Phase_4.ShouldCalculate True
+_set Phase_4.ShouldCalculate False
+_set Model.CurrentPhase Phase_3
+_set Model.CurrentPhase Phase_2
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_gotosoil
+_set Ss.User12 1
+_set Ss.User6 1
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view Phase_2
+_gotosoil
+_set Ss.User12 3
+_mergeequivalents Geometry
+_gotostages
+_set Model.CurrentPhase InitialPhase
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User12 5
+_mergeequivalents Geometry
+_gotostages
+_set Model.CurrentPhase Phase_4
+_set Phase_4.Deform.UseDefaultIterationParams False
+_set Phase_4.Deform.MaxLoadFractionPerStep 0.1
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view Phase_4
+##~ running Plaxis2DXInput.exe 22.1.0.452
+_gotosoil
+_mergeequivalents Geometry
+_gotostages
+_set Model.CurrentPhase InitialPhase
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User12 10
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User12 1
+_set Ss.User13 0.01
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_set Model.CurrentPhase Phase_4
+_set Phase_4.Deform.UseDefaultIterationParams True
+_set Phase_4.ShouldCalculate True
+_calculate
+_set Phase_4.Deform.UseDefaultIterationParams False
+_set Phase_4.Deform.MaxLoadFractionPerStep 0.1
+_set Phase_4.ShouldCalculate True
+_calculate
+_gotosoil
+_set Ss.User13 0.05
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_gotosoil
+_set Ss.User13 0.1
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_set Phase_4.Deform.UseDefaultIterationParams True
+_set Phase_4.ShouldCalculate True
+_calculate
+_set Phase_4.Deform.UseDefaultIterationParams False
+_set Phase_4.Deform.MaxLoadFractionPerStep 0.05
+_set Phase_4.Deform.MaxSteps 2000
+_set Phase_4.ShouldCalculate True
+_calculate
+_gotosoil
+_set Ss.User13 0.2
+_mergeequivalents Geometry
+_gotostages
+_set Model.CurrentPhase InitialPhase
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_set Model.CurrentPhase Phase_4
+_gotosoil
+_set Ss.User13 0.3
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_set Phase_4.Deform.UseDefaultIterationParams True
+_set Phase_4.ShouldCalculate True
+_calculate
+_set Phase_4.Deform.UseDefaultIterationParams False
+_set Phase_4.Deform.MaxLoadFractionPerStep 0.1
+_set Phase_4.ShouldCalculate True
+_calculate
+_set Phase_4.Deform.MaxLoadFractionPerStep 0.05
+_set Phase_4.Deform.MaxSteps 2000
+_set Phase_4.ShouldCalculate True
+_calculate
+_set Phase_4.Deform.UseDefaultIterationParams True
+_gotosoil
+_set Ss.User13 0.5
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view Phase_4
+_gotosoil
+_set Ss.User13 0.75
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_set Phase_4.Deform.UseDefaultIterationParams False
+_set Phase_4.Deform.MaxLoadFractionPerStep 0.1
+_set Phase_4.ShouldCalculate True
+_calculate
+_set Model.CurrentPhase InitialPhase
+##~ running Plaxis2DXInput.exe 22.1.0.452
+_gotosoil
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+##~ running Plaxis2DXInput.exe 22.1.0.452
+##~ running Plaxis2DXInput.exe 22.1.0.452
+_gotosoil
+_mergeequivalents Geometry
+_gotostages
+_view InitialPhase
+_gotosoil
+_mergeequivalents Geometry
+_gotostages
+_gotosoil
+_set Ss.User13 1
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User13 0.5
+_set Ss.User6 0.1
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_gotosoil
+_mergeequivalents Geometry
+_gotostages
+_view InitialPhase
+_view InitialPhase
+_gotosoil
+_set Ss.User6 0.5
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_mergeequivalents Geometry
+_gotostages
+_view InitialPhase
+_gotosoil
+_set Ss.User6 1
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+##~ running Plaxis2DXInput.exe 22.1.0.452
+_set Ss.User12 4
+_set Ss.User12 5
+_set Ss.User13 0.01
+_set Ss.User13 0.1
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_set Model.CurrentPhase Phase_3
+_set Phase_3.Deform.UseDefaultIterationParams False
+_set Phase_3.Deform.MaxLoadFractionPerStep 0.1
+_set Phase_3.ShouldCalculate True
+_calculate
+_set Phase_3.Deform.MaxSteps 2000
+_set Phase_3.Deform.MaxLoadFractionPerStep 0.05
+_set Phase_3.ShouldCalculate True
+_calculate
+_set Model.CurrentPhase Phase_4
+_set Phase_4.Deform.MaxLoadFractionPerStep 0.05
+_set Phase_4.Deform.MaxSteps 2000
+_set Phase_4.ShouldCalculate True
+_calculate
+_set Phase_4.Deform.MaxLoadFractionPerStep 0.01
+_set Phase_4.ShouldCalculate True
+_calculate
+_set Phase_4.Deform.UseDefaultIterationParams True
+_set Phase_4.ShouldCalculate True
+_calculate
+_set Phase_4.Deform.UseDefaultIterationParams False
+_set Phase_4.Deform.ToleratedError 0.1
+_set Phase_4.ShouldCalculate True
+_calculate
+_set Phase_4.Deform.ToleratedError 0.05
+_set Phase_4.ShouldCalculate True
+_calculate
+_view Phase_4
+_gotosoil
+_gotostructures
+_gotosoil
+_set Ss.User13 0.01
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view Phase_4
+_view Phase_4
+_gotosoil
+_set Ss.User13 0.2
+_mergeequivalents Geometry
+_gotostages
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_3
+_set Phase_3.Deform.UseDefaultIterationParams True
+_view Phase_3
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_set Phase_3.Deform.UseDefaultIterationParams False
+_set Phase_3.Deform.MaxLoadFractionPerStep 0.1
+_set Model.CurrentPhase Phase_4
+_set Model.CurrentPhase Phase_3
+_set Phase_3.ShouldCalculate True
+_calculate
+_set Phase_3.Deform.ToleratedError 0.05
+_set Phase_3.ShouldCalculate True
+_calculate
+_view Phase_3
+_gotosoil
+_mergeequivalents Geometry
+_gotostages
+_gotosoil
+_set Ss.User13 0.5
+_mergeequivalents Geometry
+_gotostages
+_set Phase_3.Deform.MaxLoadFractionPerStep 0.5
+_set Model.CurrentPhase InitialPhase
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User13 1
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User13 0.5
+_set Ss.User6 0.1
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User6 0.5
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User6 1
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User6 10
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_view InitialPhase
+_gotosoil
+_set Ss.User6 1
+_set Ss.User7 0.01
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User7 0.1
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_view InitialPhase
+_gotosoil
+_set Ss.User7 0.5
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User7 1
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_view InitialPhase
+_view InitialPhase
+_gotosoil
+_set Ss.User5 0.03
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_set Model.CurrentPhase Phase_1
+_set Phase_1.Deform.ToleratedError 0.05
+_set Phase_1.ShouldCalculate True
+_set Model.CurrentPhase InitialPhase
+_set InitialPhase.ShouldCalculate True
+_calculate
+_set Model.CurrentPhase Phase_2
+_set Phase_2.Deform.UseDefaultIterationParams False
+_set Phase_2.Deform.ToleratedError 0.05
+_set Phase_2.ShouldCalculate True
+_calculate
+_view Phase_2
+_view Phase_2
+_gotosoil
+_set Ss.User5 0.04
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view Phase_2
+_gotosoil
+_set Ss.User5 0.05
+_mergeequivalents Geometry
+_gotostages
+_set Model.CurrentPhase InitialPhase
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User1 0.757
+_set Ss.User2 0.32
+_set Ss.User4 0.087
+_set Ss.User5 0.02
+_set Ss.User12 1
+_set Ss.User1 0.8
+_set Ss.User2 0.35
+_set Ss.User4 0.08
+_set Ss.User12 5
+_set Ss.User12 1
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User12 5
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User12 8
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_gotosoil
+_mergeequivalents Geometry
+_gotostages
+_view InitialPhase
+_gotosoil
+_set Ss.User12 10
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User12 3
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User12 1
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User13 0.01
+_set Ss.User12 5
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_gotosoil
+_mergeequivalents Geometry
+_gotostages
+_view InitialPhase
+_gotosoil
+_set Ss.User13 0.1
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User13 0.5
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User13 1
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User13 0.5
+_set Ss.User6 0.1
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User6 0.5
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User6 1
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User6 10
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User6 1
+_set Ss.User7 0.01
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User7 0.1
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_gotosoil
+_set Ss.User7 0.5
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User7 1
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User5 0.03
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User5 0.04
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User5 0.05
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User5 0.02
+_set Ss.User4 0.06
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User4 0.08
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User4 0.1
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User4 0.15
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User4 0.08
+_set Ss.User11 0.0001
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User11 0.001
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User11 0.01
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User11 0.1
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User11 1
+_set Ss.User1 0.6
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User1 0.9
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User1 1.2
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_gotosoil
+_mergeequivalents Geometry
+_gotostages
+_view InitialPhase
+_gotosoil
+_set Ss.User1 0.8
+_set Ss.User3 1
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User3 1.3
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User3 1.5
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User3 1.3
+_set Ss.User2 0.3
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User2 0.35
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_gotosoil
+_set Ss.User2 0.4
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view InitialPhase
+##~ running Plaxis2DXInput.exe 22.1.0.452
+_gotoflow
+_gotostages
+_set Model.CurrentPhase Phase_4
+##~ running Plaxis2DXInput.exe 22.1.0.452
+_view Phase_4
+##~ running Plaxis2DXInput.exe 22.1.0.452
+_set Model.CurrentPhase Phase_2
+_set Phase_2.Deform.UseDefaultIterationParams True
+_set Phase_2.Deform.UseDefaultIterationParams False
+_set Model.CurrentPhase Phase_3
+_set Phase_3.Deform.ToleratedError 0.001
+_set Model.CurrentPhase Phase_4
+_set Phase_4.Deform.ToleratedError 0.001
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate) True
+_calculate
+_view Phase_4
+##~ running Plaxis2DXInput.exe 22.1.0.452
+_set Model.CurrentPhase Phase_2
+_set Phase_2.ShouldCalculate True
+_set Phase_2.ShouldCalculate False
+_set Phase_2.ShouldCalculate True
+_calculate
+_set Phase_2.Deform.MaxLoadFractionPerStep 0.05
+_set Phase_2.ShouldCalculate True
+_calculate
+##~ running Plaxis2DXInput.exe 22.1.0.452
+_set Phase_2.ShouldCalculate True
+_gotostructures
+_gotosoil
+_set 支撑.EA 3500000
+_mergeequivalents Geometry
+_gotoflow
+_gotostages
+_gotostructures
+_set Point_2.y -20
+_mergeequivalents Geometry
+_gotomesh
+_gotostructures
+_set Point_5.y 15
+_set Point_5.y 12
+_set Point_6.y 12
+_line (50 6) (65 6)
+_fixedendanchor (50 15)
+_fixedendanchor (52 15)
+_delete (Point_13)
+_fixedendanchor (50 9)
+_fixedendanchor (50 3)
+_set Point_12.FixedEndAnchor.Material 支撑
+_set Point_13.FixedEndAnchor.Material 支撑
+_set Point_14.FixedEndAnchor.Material 支撑
+_mergeequivalents Geometry
+_gotoflow
+_gotomesh
+_mesh 0.06
+_gotoflow
+_gotostages
+_gotosoil
+_set Ss.User2 0.3
+_set Ss.User3 1.2
+_set Ss.User11 0.0002
+_set Ss.User4 0.2
+_set Ss.User6 2.5
+_set Ss.User1 0.6
+_delete 土层1
+_delete 土层2
+_mergeequivalents Geometry
+_gotostages
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_3
+_set Model.CurrentPhase Phase_4
+_set Model.CurrentPhase Phase_3
+_set Model.CurrentPhase InitialPhase
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_3
+_set Model.CurrentPhase Phase_4
+_set Model.CurrentPhase InitialPhase
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_3
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_3
+_activate (Point_12_1) Phase_3
+_set Model.CurrentPhase Phase_4
+_set Model.CurrentPhase Phase_3
+_delete Phase_4
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_3
+_phase Phase_3
+_set Model.CurrentPhase Phase_4
+_set Phase_4.Identification "开挖3"
+_set Model.CurrentPhase Phase_3
+_set Model.CurrentPhase Phase_4
+_set Model.CurrentPhase Phase_3
+_set Model.CurrentPhase Phase_4
+_deactivate (BoreholePolygon_1_4) Phase_4
+_activate (Point_13_1) Phase_4
+_phase Phase_4
+_set Model.CurrentPhase Phase_5
+_set Phase_5.Identification "开挖4"
+_deactivate (BoreholePolygon_1_5) Phase_5
+_activate (Point_14_1) Phase_5
+_set Model.CurrentPhase Phase_4
+_set Model.CurrentPhase Phase_2
+_set Phase_2.Identification "开挖1"
+_set Model.CurrentPhase Phase_3
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase InitialPhase
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_3
+_set Model.CurrentPhase Phase_4
+_set Model.CurrentPhase Phase_5
+_set Model.CurrentPhase Phase_2
+_set Phase_2.Deform.ResetDisplacementsToZero True
+_set Phase_3.Deform.UseDefaultIterationParams True
+_set Phase_2.Deform.UseDefaultIterationParams True
+_set Phase_2.ShouldCalculate True
+_calculate
+_view Phase_2
+_gotosoil
+_set Ss.User1 0.9
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_gotosoil
+_mergeequivalents Geometry
+_gotostages
+_calculate
+_view Phase_2
+_view Phase_2
+_gotosoil
+_set Ss.User1 1.2
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_2
+_gotosoil
+_set Ss.User1 0.9
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_2
+_gotosoil
+_set Ss.User2 0.4
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_set Model.CurrentPhase Phase_5
+_set Phase_5.Deform.UseDefaultIterationParams False
+_set Phase_5.Deform.ToleratedError 0.05
+_set Phase_5.ShouldCalculate True
+_calculate
+_view Phase_5
+_gotosoil
+_set Ss.User2 0.5
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_set Model.CurrentPhase Phase_1
+_calculate
+_set Phase_1.ShouldCalculate True
+_calculate
+_gotosoil
+_set Ss.User2 0.45
+_mergeequivalents Geometry
+_gotostages
+_calculate
+_set Phase_1.ShouldCalculate True
+_set Model.CurrentPhase InitialPhase
+_set InitialPhase.ShouldCalculate True
+_set InitialPhase.ShouldCalculate False
+_set InitialPhase.ShouldCalculate True
+_calculate
+_set Model.CurrentPhase Phase_4
+_set Phase_4.ShouldCalculate True
+_set Phase_4.Deform.UseDefaultIterationParams False
+_set Phase_4.Deform.ToleratedError 0.05
+_calculate
+_view Phase_4
+_gotosoil
+_set Ss.User2 0.3
+_set Ss.User3 0.9
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_gotosoil
+_mergeequivalents Geometry
+_gotostages
+_view Phase_4
+_gotosoil
+_set Ss.User3 1.2
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_4
+_gotosoil
+_set Ss.User3 1.5
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_3
+_set Model.CurrentPhase Phase_4
+_set Model.CurrentPhase Phase_2
+_set Model.CurrentPhase Phase_3
+_set Model.CurrentPhase Phase_4
+_set Model.CurrentPhase Phase_5
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set Ss.User3 1.2
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_view Phase_5
+_gotosoil
+_set Ss.Identification "上海土"
+_set 上海土.User3 0.9
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_view Phase_5
+_gotosoil
+_set 上海土.User3 1.2
+_set 上海土.User1 0.6
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User1 0.9
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User1 1.2
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User1 0.9
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User2 0.4
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User2 0.45
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User2 0.3
+_set 上海土.User11 0.0001
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User11 0.001
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User11 1
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User11 0.0002
+_set 上海土.User4 0.04
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User4 0.1
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User4 0.2
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User5 0.04
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User5 0.08
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User5 0.02
+_set 上海土.User6 0.2
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User6 1
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User6 5
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_soiltest 上海土
+_set 上海土.User6 2.5
+_set 上海土.User12 1
+_set 上海土.User12 5
+_set 上海土.User7 0.1
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User7 0.5
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User7 2
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User7 1
+_set 上海土.User12 1
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User12 5
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User12 10
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User12 5
+_set 上海土.User13 0.01
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_gotosoil
+_mergeequivalents Geometry
+_gotostages
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User13 0.1
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User13 1
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User13 0.5
+_set 上海土.User1 0.99
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User1 0.81
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User1 0.9
+_set 上海土.User2 0.33
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User2 0.27
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User2 0.3
+_set 上海土.User3 1.32
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User3 1.08
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User3 1.2
+_set 上海土.User4 0.22
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User4 0.18
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User4 0.2
+_set 上海土.User5 0.022
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User5 0.018
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User6 2.75
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User6 2.25
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User6 2.5
+_set 上海土.User7 1.1
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User7 0.9
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User11 0.00022
+_set 上海土.User7 1
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User11 0.00018
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User11 0.0002
+_set 上海土.User12 5.5
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User12 4.5
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User12 5
+_set 上海土.User13 0.55
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User13 0.45
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User13 0.5
+_set 上海土.User5 0.02
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User1 0.99
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User1 0.81
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User1 0.9
+_set 上海土.User2 0.33
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User2 0.27
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User2 0.3
+_set 上海土.User3 1.32
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_view Phase_5
+_gotosoil
+_set 上海土.User3 1.08
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User3 1.2
+_set 上海土.User4 0.22
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User4 0.18
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User4 0.2
+_set 上海土.User5 0.022
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User5 0.018
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User5 0.02
+_set 上海土.User6 2.75
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User6 2.25
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User6 2.5
+_set 上海土.User7 1.1
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User7 0.9
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User11 0.00022
+_set 上海土.User7 1
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User11 0.00018
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User11 0.0002
+_set 上海土.User12 5.5
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User12 4.5
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User12 5
+_set 上海土.User13 0.55
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+_gotosoil
+_set 上海土.User13 0.45
+_mergeequivalents Geometry
+_gotostages
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view Phase_5
+##~ running Plaxis2DXInput.exe 22.1.0.452
+_gotostructures
+##~ running Plaxis2DXInput.exe 22.1.0.452
+_set 上海土.Identification "SHM_Soil"
+##~ running Plaxis2DXInput.exe 22.1.0.452
+_gotosoil
+_mergeequivalents Geometry
+_gotostages
+_set Model.CurrentPhase InitialPhase
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate Phase_2.ShouldCalculate Phase_3.ShouldCalculate Phase_4.ShouldCalculate Phase_5.ShouldCalculate) True
+_calculate
+_view InitialPhase
+##~ running Plaxis2DXInput.exe 22.1.0.452
+_view InitialPhase

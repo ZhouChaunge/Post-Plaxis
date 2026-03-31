@@ -1,0 +1,493 @@
+ DATE 2024-05-08 TIME 19:04:01.313
+ Reference project:
+   E:\Desktop\基坑开挖2D算例\model\2Dmodel
+ Executable directory:
+   D:\200_Scientific\20100_Plaxis\2D\kernel\
+ Executable date:
+   Apr 19 2022 14:51:00
+
+ ========================================================
+ ========================================================
+ PHASE 2: "+XwBjFg-1"
+
+    5894 active of     6036 nodes
+     692 active of      709 soil elements
+      58 active of       60 interface/discontinuity elements
+      30 active of       30 plate elements
+       1 active of        4 FE   elements
+   11938 active of    12222 dofs
+ ========================================================
+ ========================================================
+
+ CALCULATION TYPE                                 Plastic
+ CONVERGENCE CRITERIA
+   Global force error tolerance                 1.000E-02
+   Global moment error tolerance                1.000E-03
+   Inaccurate soil plastic point tolerance      1.000E-01
+   Inaccurate soil elastic point tolerance      1.000E-01
+   Integrated interface/discontinuity local err 1.000E-01ce
+   Inaccurate interface/discontinuity plastic p 1.000E-01ance
+ 
+ STEP SIZE CONTROL PARAMETERS
+   Maximum iterations per step                         60
+   Desired minimum iterations per step                  6
+   Desired maximum iterations per step                 15
+   Maximum consecutive negative steps                   5
+   Arc-length control                                  On
+
+ ========================================================
+ STEP 1
+ ========================================================
+
+ STEP 1 - ATTEMPT 1 - ITERATION 1
+ Current step size                              1.774E-01
+ Total number of iterations in current step             1
+ Global force error                             1.001E-02
+ Integrated soil local error                    6.629E-03
+ Global moment error                            9.518E-14
+ Soil plastic points
+   Total                                             8298
+   Inaccurate                                        1758
+ Check convergence
+   Global force error too large
+   Too many inaccurate soil plastic points
+   Minimum of 2 iterations per attempt not reached
+   Converged attempt:                                  NO
+
+ STEP 1 - ATTEMPT 1 - ITERATION 2
+ Current step size                              1.513E-01
+ Total number of iterations in current step             2
+ Global force error                             5.224E-03
+ Integrated soil local error                    5.789E-04
+ Global moment error                            5.145E-14
+ Soil plastic points
+   Total                                             8164
+   Inaccurate                                           0
+ Check convergence
+   Converged attempt:                                 YES
+
+ STEP 1 - SUMMARY
+ Reached sum-MStage                             1.513E-01
+ Step convergence achieved                            YES
+ Relative stiffness                             9.098E-01
+ Maximum out-of-balance force                   1.457E+00
+   At node       29, dof 2
+   Location ( 6.430E+01, 1.800E+01, 0.000E+00)
+ Maximum incremental displacement               1.039E-03
+   At node      359, dof 2
+   Location ( 5.394E+01, 1.800E+01, 0.000E+00)
+
+ ========================================================
+ STEP 2
+ ========================================================
+
+ STEP 2 - ATTEMPT 1 - ITERATION 1
+ Current step size                              1.513E-01
+ Total number of iterations in current step             1
+ Global force error                             1.116E-02
+ Integrated soil local error                    6.875E-03
+ Integrated interface local error               5.661E-03
+ Global moment error                            5.655E-14
+ Soil plastic points
+   Total                                             8286
+   Inaccurate                                        1972
+ Interface plastic points
+   Total                                                1
+   Inaccurate                                           1
+   Total tension                                        1
+   Inaccurate tension                                   1
+ Check convergence
+   Global force error too large
+   Too many inaccurate soil plastic points
+   Minimum of 2 iterations per attempt not reached
+   Converged attempt:                                  NO
+
+ STEP 2 - ATTEMPT 1 - ITERATION 2
+ Current step size                              1.342E-01
+ Total number of iterations in current step             2
+ Global force error                             6.122E-03
+ Integrated soil local error                    4.875E-04
+ Integrated interface local error               2.844E-03
+ Global moment error                            2.971E-14
+ Soil plastic points
+   Total                                             8189
+   Inaccurate                                           0
+ Interface plastic points
+   Total                                                1
+   Inaccurate                                           1
+   Total tension                                        1
+   Inaccurate tension                                   1
+ Check convergence
+   Converged attempt:                                 YES
+
+ STEP 2 - SUMMARY
+ Reached sum-MStage                             2.855E-01
+ Step convergence achieved                            YES
+ Relative stiffness                             8.868E-01
+ Maximum out-of-balance force                   1.656E+00
+   At node       29, dof 2
+   Location ( 6.430E+01, 1.800E+01, 0.000E+00)
+ Maximum incremental displacement               1.049E-03
+   At node      274, dof 2
+   Location ( 5.479E+01, 1.800E+01, 0.000E+00)
+
+ ========================================================
+ STEP 3
+ ========================================================
+
+ STEP 3 - ATTEMPT 1 - ITERATION 1
+ Current step size                              1.342E-01
+ Total number of iterations in current step             1
+ Global force error                             7.895E-03
+ Integrated soil local error                    6.697E-03
+ Integrated interface local error               1.801E-02
+ Global moment error                            5.324E-14
+ Soil plastic points
+   Total                                             8285
+   Inaccurate                                        1976
+ Interface plastic points
+   Total                                                1
+   Inaccurate                                           1
+   Total tension                                        1
+   Inaccurate tension                                   1
+ Check convergence
+   Too many inaccurate soil plastic points
+   Minimum of 2 iterations per attempt not reached
+   Converged attempt:                                  NO
+
+ STEP 3 - ATTEMPT 1 - ITERATION 2
+ Current step size                              1.221E-01
+ Total number of iterations in current step             2
+ Global force error                             4.353E-03
+ Integrated soil local error                    3.136E-04
+ Integrated interface local error               2.651E-02
+ Global moment error                            1.765E-14
+ Soil plastic points
+   Total                                             8191
+   Inaccurate                                           0
+ Interface plastic points
+   Total                                                1
+   Inaccurate                                           1
+   Total tension                                        1
+   Inaccurate tension                                   1
+ Check convergence
+   Converged attempt:                                 YES
+
+ Number of iterations below desired minimum
+   Rescaling: step size scale factor            2.000E+00
+
+ STEP 3 - ATTEMPT 2 - ITERATION 1
+ Current step size                              2.442E-01
+ Total number of iterations in current step             3
+ Global force error                             5.411E-03
+ Integrated soil local error                    6.296E-03
+ Integrated interface local error               4.300E-02
+ Global moment error                            3.528E-14
+ Soil plastic points
+   Total                                             8289
+   Inaccurate                                        1821
+ Interface plastic points
+   Total                                                1
+   Inaccurate                                           1
+   Total tension                                        1
+   Inaccurate tension                                   1
+ Check convergence
+   Too many inaccurate soil plastic points
+   Minimum of 2 iterations per attempt not reached
+   Converged attempt:                                  NO
+
+ STEP 3 - ATTEMPT 2 - ITERATION 2
+ Current step size                              2.257E-01
+ Total number of iterations in current step             4
+ Global force error                             3.203E-03
+ Integrated soil local error                    2.294E-04
+ Integrated interface local error               4.403E-03
+ Global moment error                            2.709E-14
+ Soil plastic points
+   Total                                             8218
+   Inaccurate                                           0
+ Interface plastic points
+   Total                                                1
+   Inaccurate                                           1
+   Total tension                                        1
+   Inaccurate tension                                   1
+ Check convergence
+   Converged attempt:                                 YES
+
+ STEP 3 - SUMMARY
+ Reached sum-MStage                             5.112E-01
+ Step convergence achieved                            YES
+ Relative stiffness                             8.656E-01
+ Maximum out-of-balance force                   9.457E-01
+   At node       29, dof 2
+   Location ( 6.430E+01, 1.800E+01, 0.000E+00)
+ Maximum incremental displacement               2.125E-03
+   At node      269, dof 2
+   Location ( 5.563E+01, 1.800E+01, 0.000E+00)
+
+ ========================================================
+ STEP 4
+ ========================================================
+
+ STEP 4 - ATTEMPT 1 - ITERATION 1
+ Current step size                              2.257E-01
+ Total number of iterations in current step             1
+ Global force error                             8.916E-03
+ Integrated soil local error                    1.191E-02
+ Integrated interface local error               8.671E-02
+ Global moment error                            3.712E-14
+ Soil plastic points
+   Total                                             8293
+   Inaccurate                                        3892
+ Interface plastic points
+   Total                                                1
+   Inaccurate                                           1
+   Total tension                                        1
+   Inaccurate tension                                   1
+ Check convergence
+   Too many inaccurate soil plastic points
+   Minimum of 2 iterations per attempt not reached
+   Converged attempt:                                  NO
+
+ STEP 4 - ATTEMPT 1 - ITERATION 2
+ Current step size                              1.935E-01
+ Total number of iterations in current step             2
+ Global force error                             5.458E-03
+ Integrated soil local error                    3.455E-04
+ Integrated interface local error               1.914E-02
+ Global moment error                            1.736E-14
+ Soil plastic points
+   Total                                             8236
+   Inaccurate                                           0
+ Interface plastic points
+   Total                                                1
+   Inaccurate                                           1
+   Total tension                                        1
+   Inaccurate tension                                   1
+ Check convergence
+   Converged attempt:                                 YES
+
+ STEP 4 - SUMMARY
+ Reached sum-MStage                             7.047E-01
+ Step convergence achieved                            YES
+ Relative stiffness                             8.590E-01
+ Maximum out-of-balance force                  -8.994E-01
+   At node     2883, dof 2
+   Location ( 4.919E+01,-2.046E+01, 0.000E+00)
+ Maximum incremental displacement               2.145E-03
+   At node      170, dof 2
+   Location ( 5.659E+01, 1.800E+01, 0.000E+00)
+
+ ========================================================
+ STEP 5
+ ========================================================
+
+ STEP 5 - ATTEMPT 1 - ITERATION 1
+ Current step size                              1.935E-01
+ Total number of iterations in current step             1
+ Global force error                             1.070E-02
+ Integrated soil local error                    1.078E-02
+ Integrated interface local error               1.092E-01
+ Global moment error                            3.374E-14
+ Soil plastic points
+   Total                                             8293
+   Inaccurate                                        3687
+ Interface plastic points
+   Total                                                1
+   Inaccurate                                           1
+   Total tension                                        1
+   Inaccurate tension                                   1
+ Check convergence
+   Global force error too large
+   Too many inaccurate soil plastic points
+   Integrated interface local error too large
+   Minimum of 2 iterations per attempt not reached
+   Converged attempt:                                  NO
+
+ STEP 5 - ATTEMPT 1 - ITERATION 2
+ Current step size                              1.667E-01
+ Total number of iterations in current step             2
+ Global force error                             6.499E-03
+ Integrated soil local error                    4.398E-04
+ Integrated interface local error               1.738E-02
+ Global moment error                            1.269E-14
+ Soil plastic points
+   Total                                             8229
+   Inaccurate                                           1
+ Interface plastic points
+   Total                                                1
+   Inaccurate                                           1
+   Total tension                                        1
+   Inaccurate tension                                   1
+ Check convergence
+   Converged attempt:                                 YES
+
+ STEP 5 - SUMMARY
+ Reached sum-MStage                             8.714E-01
+ Step convergence achieved                            YES
+ Relative stiffness                             8.512E-01
+ Maximum out-of-balance force                  -1.150E+00
+   At node      984, dof 1
+   Location ( 5.000E+01, 1.762E+01, 0.000E+00)
+ Maximum incremental displacement               2.161E-03
+   At node      171, dof 2
+   Location ( 5.707E+01, 1.800E+01, 0.000E+00)
+
+ ========================================================
+ STEP 6
+ ========================================================
+
+ Close to ultimate level
+   Rescaling: step size scale factor            8.286E-01
+
+ STEP 6 - ATTEMPT 1 - ITERATION 1
+ Current step size                              1.381E-01
+ Total number of iterations in current step             1
+ Global force error                             8.734E-03
+ Integrated soil local error                    8.079E-03
+ Integrated interface local error               1.078E-01
+ Global moment error                            1.953E-14
+ Soil plastic points
+   Total                                             8286
+   Inaccurate                                        2747
+ Interface plastic points
+   Total                                                1
+   Inaccurate                                           1
+   Total tension                                        1
+   Inaccurate tension                                   1
+ Check convergence
+   Too many inaccurate soil plastic points
+   Integrated interface local error too large
+   Minimum of 2 iterations per attempt not reached
+   Converged attempt:                                  NO
+
+ STEP 6 - ATTEMPT 1 - ITERATION 2
+ Current step size                              1.230E-01
+ Total number of iterations in current step             2
+ Global force error                             5.260E-03
+ Integrated soil local error                    3.825E-04
+ Integrated interface local error               4.072E-02
+ Global moment error                            7.698E-15
+ Soil plastic points
+   Total                                             8198
+   Inaccurate                                           1
+ Interface plastic points
+   Total                                                1
+   Inaccurate                                           1
+   Total tension                                        1
+   Inaccurate tension                                   1
+ Check convergence
+   Converged attempt:                                 YES
+
+ STEP 6 - SUMMARY
+ Reached sum-MStage                             9.943E-01
+ Step convergence achieved                            YES
+ Relative stiffness                             8.422E-01
+ Maximum out-of-balance force                  -9.802E-01
+   At node      984, dof 1
+   Location ( 5.000E+01, 1.762E+01, 0.000E+00)
+ Maximum incremental displacement               1.802E-03
+   At node      165, dof 2
+   Location ( 5.755E+01, 1.800E+01, 0.000E+00)
+
+ ========================================================
+ STEP 7
+ ========================================================
+
+ Close to ultimate level
+   Rescaling: step size scale factor            2.845E-01
+
+ STEP 7 - ATTEMPT 1 - ITERATION 1
+ Current step size                              3.498E-02
+ Total number of iterations in current step             1
+ Global force error                             5.082E-03
+ Integrated soil local error                    2.133E-03
+ Integrated interface local error               4.375E-02
+ Global moment error                            9.177E-15
+ Soil plastic points
+   Total                                             8206
+   Inaccurate                                           0
+ Interface plastic points
+   Total                                                1
+   Inaccurate                                           1
+   Total tension                                        1
+   Inaccurate tension                                   1
+ Check convergence
+   Minimum of 2 iterations per attempt not reached
+   Converged attempt:                                  NO
+
+ STEP 7 - ATTEMPT 1 - ITERATION 2
+ Current step size                              3.310E-02
+ Total number of iterations in current step             2
+ Global force error                             2.988E-03
+ Integrated soil local error                    1.973E-04
+ Integrated interface local error               1.912E-02
+ Global moment error                            1.948E-15
+ Soil plastic points
+   Total                                             7532
+   Inaccurate                                           1
+ Interface plastic points
+   Total                                                1
+   Inaccurate                                           1
+   Total tension                                        1
+   Inaccurate tension                                   1
+ Check convergence
+   Converged attempt:                                 YES
+
+ Scaling step size to reach ultimate level
+   Rescaling: step size scale factor            1.707E-01
+
+ STEP 7 - ATTEMPT 2 - ITERATION 1
+ Current step size                              5.650E-03
+ Total number of iterations in current step             1
+ Global force error                             4.889E-03
+ Integrated soil local error                    1.692E-03
+ Integrated interface local error               5.341E-02
+ Global moment error                            6.309E-15
+ Soil plastic points
+   Total                                             7989
+   Inaccurate                                           2
+ Interface plastic points
+   Total                                                1
+   Inaccurate                                           1
+   Total tension                                        1
+   Inaccurate tension                                   1
+ Check convergence
+   Minimum of 2 iterations per attempt not reached
+   Converged attempt:                                  NO
+
+ STEP 7 - ATTEMPT 2 - ITERATION 2
+ Current step size                              5.650E-03
+ Total number of iterations in current step             2
+ Global force error                             2.821E-03
+ Integrated soil local error                    1.693E-04
+ Integrated interface local error               2.343E-02
+ Global moment error                            3.933E-16
+ Soil plastic points
+   Total                                             5627
+   Inaccurate                                           0
+ Interface plastic points
+   Total                                                1
+   Inaccurate                                           1
+   Total tension                                        1
+   Inaccurate tension                                   1
+ Check convergence
+   Converged attempt:                                 YES
+
+ STEP 7 - SUMMARY
+ Reached sum-MStage                             1.000E+00
+ Step convergence achieved                            YES
+ Relative stiffness                             7.042E-01
+ Maximum out-of-balance force                  -4.961E-01
+   At node      984, dof 1
+   Location ( 5.000E+01, 1.762E+01, 0.000E+00)
+ Maximum incremental displacement               9.694E-05
+   At node       93, dof 2
+   Location ( 5.863E+01, 1.800E+01, 0.000E+00)
+
+ ========================================================
+ ========================================================
+ PHASE SUMMARY
+ ========================================================
+ ========================================================
+ Prescribed ultimate state reached

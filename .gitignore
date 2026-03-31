@@ -1,0 +1,5 @@
+*.py linguist-language=Python
+main_backup.py
+__pycache__/
+*.pyc
+
